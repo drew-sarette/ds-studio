@@ -1,0 +1,13 @@
+{
+  "name": "ds-studio",
+  "version": "1.0.0",
+  "description": "Drew Sarette's violin studio website",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "Drew Sarette",
+  "license": "ISC"
+}
