@@ -129,9 +129,10 @@ nav {
   color: var(--clr-text-primary);
 }
 
-.site-nav-li a:active {
-  font-family: bold;
+a.current-page-a {
+  text-decoration: underline;
 }
+
 
 main {
   grid-area: main;
