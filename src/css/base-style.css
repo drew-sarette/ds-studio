@@ -82,7 +82,8 @@ select {
 
 /* || MOBILE LAYOUT */
 body {
-  background-image: url(../assets/img/BB_SeamlessPaper_01.jpg);
+  background-image: url("../assets/img/bg.svg");
+  background-repeat: repeat;
   font-family: var(--ff-body);
   font-size: var(--fs-body-mobile);
   padding: 1em;
@@ -144,6 +145,9 @@ h1 {
   font-size: var(--fs-heading);
 }
 
+footer {
+  text-align: center;
+}
 /* || UTILITIES */
 
 .display-none {

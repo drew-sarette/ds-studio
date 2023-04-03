@@ -18,6 +18,16 @@
             {{ content | safe }}
         </main>
         {% include 'footer.njk' %}
-    <script src="../js/all.js"></script>
+        <script>
+            const currentPageLink = document.querySelector(`a[href*="${
+                location.pathname
+            }"]`);
+            currentPageLink.classList.add("current-page-a");
+            const yearSpans = document.querySelectorAll(".current-year");
+            yearSpans.forEach(s => {
+                s.textContent = new Date().getFullYear();
+            });
+        </script>
     </body>
+    {% include 'sprites.svg.njk'%}
 </html>
