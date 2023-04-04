@@ -112,7 +112,7 @@ nav {
   transition-duration:.3s;
 }
 
-.main-menu-checkbox:checked ~ nav {
+nav.open {
   height: calc(5 * 1.5em);
 }
 
@@ -120,6 +120,42 @@ nav {
   display: none;
 }
 
+.main-menu-label {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+}
+
+.logo-svg {
+  height: 100px;
+  width: 150px;
+}
+
+.violin-svg {
+  width: 150px;
+  height: 50px;
+  transition: transform;
+  transition-duration: .3s;
+}
+
+.bow-svg {
+  width: 150px;
+  height: 25px;
+  transition: transform;
+  transition-duration: .3s;
+}
+
+.violin-svg.open {
+  transform: rotate(30deg);
+}
+
+.bow-svg.open {
+  transform: rotate(-45deg) translateX(40px) translateY(-10px)
+}
+
+.main-menu-label > span {
+  text-align: center;
+}
 .site-nav-li {
   width: 100%;
 }

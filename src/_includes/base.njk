@@ -10,6 +10,7 @@
             href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IM+Fell+Double+Pica:ital@0;1&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="/css/base-style.css">
+        <script src="/js/all.js" defer></script>
         <title>DS violin studio</title>
     </head>
     <body>
@@ -18,16 +19,6 @@
             {{ content | safe }}
         </main>
         {% include 'footer.njk' %}
-        <script>
-            const currentPageLink = document.querySelector(`a[href*="${
-                location.pathname
-            }"]`);
-            currentPageLink.classList.add("current-page-a");
-            const yearSpans = document.querySelectorAll(".current-year");
-            yearSpans.forEach(s => {
-                s.textContent = new Date().getFullYear();
-            });
-        </script>
     </body>
     {% include 'sprites.svg.njk'%}
 </html>
