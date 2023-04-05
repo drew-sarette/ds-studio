@@ -51,7 +51,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.5em;
 }
 
 
@@ -97,6 +97,7 @@ body {
 
 header {
   grid-area: header;
+  border: 2px solid red;
 }
 
 .header-flex-wrapper {
@@ -109,10 +110,11 @@ nav {
   overflow: hidden;
   transition-property: height;
   transition-duration:.3s;
+  line-height: 40px;
 }
 
 nav.open {
-  height: calc(5 * 1.5em);
+  height: calc(5 * 40px);
 }
 
 .main-menu-label {
@@ -145,23 +147,35 @@ nav.open {
 }
 
 .bow-svg.open {
-  transform: rotate(-45deg) translateX(40px) translateY(-10px)
+  transform: rotate(-45deg) translateX(38px) translateY(-10px) ;
 }
 
 .main-menu-label > span {
   text-align: center;
 }
 
-.site-nav-li a {
+.main-nav-list {
+  text-align: center;
+}
+
+.main-nav-list a {
   text-decoration: none;
   color: var(--clr-text-primary);
 }
 
-li.current-page-li {
-  border: 2px solid red;
+.current-page-li {
+  list-style-type: none;
+  list-style-position: inside;
+  font-weight: bolder;
 }
 
+.current-page-li::before {
+  content: "||:  "
+}
 
+.current-page-li::after {
+  content: "  :||";
+}
 
 main {
   grid-area: main;
