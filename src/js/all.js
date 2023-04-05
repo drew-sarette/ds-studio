@@ -3,9 +3,10 @@ currentPageLink.classList.add("current-page-a");
 currentPageLink.parentElement.classList.add("current-page-li");
 
 
-const menuViolinBow = document.querySelectorAll(".main-menu-label svg");
+const menuViolinBow = document.querySelectorAll(".main-menu-btn svg");
 const nav = document.getElementById("main-nav")
-document.querySelector(".main-menu-label").addEventListener("click", () => {
+const navBtn = document.querySelector(".main-menu-btn");
+navBtn.addEventListener("click", () => {
     menuViolinBow.forEach(svg => svg.classList.toggle("open"));
     nav.classList.toggle("open");
 })
