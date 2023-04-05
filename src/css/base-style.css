@@ -38,7 +38,6 @@ dd {
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
 ul:where([role="list"]),
 ol:where([role="list"]) {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -116,10 +115,6 @@ nav.open {
   height: calc(5 * 1.5em);
 }
 
-.main-menu-checkbox {
-  display: none;
-}
-
 .main-menu-label {
   display: flex;
   flex-direction: column;
@@ -156,19 +151,16 @@ nav.open {
 .main-menu-label > span {
   text-align: center;
 }
-.site-nav-li {
-  width: 100%;
-}
 
 .site-nav-li a {
-  margin-left: 48%;
   text-decoration: none;
   color: var(--clr-text-primary);
 }
 
-a.current-page-a {
-  text-decoration: underline;
+li.current-page-li {
+  border: 2px solid red;
 }
+
 
 
 main {

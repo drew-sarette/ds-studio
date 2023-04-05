@@ -9,3 +9,4 @@ document.querySelector(".main-menu-label").addEventListener("click", () => {
     menuViolinBow.forEach(svg => svg.classList.toggle("open"));
     nav.classList.toggle("open");
 })
+document.querySelector("span.current-year").textContent = new Date().getFullYear();
