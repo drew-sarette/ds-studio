@@ -54,7 +54,6 @@ body {
   line-height: 1.5em;
 }
 
-
 /* Inherit fonts for inputs and buttons */
 input,
 button,
@@ -109,7 +108,7 @@ nav {
   height: 0px;
   overflow: hidden;
   transition-property: height;
-  transition-duration:.3s;
+  transition-duration: 0.3s;
   line-height: 40px;
 }
 
@@ -126,7 +125,7 @@ nav.open {
   width: 150px;
   height: 50px;
   transition: transform;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .main-menu-btn {
@@ -141,7 +140,7 @@ nav.open {
   width: 150px;
   height: 25px;
   transition: transform;
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 
 .violin-svg.open {
@@ -149,7 +148,7 @@ nav.open {
 }
 
 .bow-svg.open {
-  transform: rotate(-45deg) translateX(38px) translateY(-10px) ;
+  transform: rotate(-45deg) translateX(38px) translateY(-10px);
 }
 
 .main-nav-list {
@@ -168,7 +167,7 @@ nav.open {
 }
 
 .current-page-li::before {
-  content: "||:  "
+  content: "||:  ";
 }
 
 .current-page-li::after {
@@ -188,6 +187,53 @@ h1 {
 footer {
   text-align: center;
 }
+
+@media screen and (min-width: 75ch) {
+  .header-flex-wrapper {
+    justify-content: flex-start;
+  }
+
+  .main-menu-btn span {
+    display: none;
+  }
+
+  .bow-svg {
+    transform: translate(-40px, -30px) rotate(-65deg) !important;
+  }
+
+  .violin-svg {
+    transform: translateY(10px) translateX(-17px) rotate(60deg) !important;
+  }
+
+  body {
+    grid-template-columns: 1fr 75ch 1fr;
+    grid-template-areas:
+      "a header b"
+      "a main b"
+      "a footer b";
+  }
+
+  .main-menu-btn {
+    grid-area: b;
+  }
+
+  nav,
+  nav.open {
+    height: unset;
+  }
+
+  .main-nav-list {
+    display: flex;
+    flex-direction: row !important;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+}
+
 /* || UTILITIES */
 
 .display-none {
