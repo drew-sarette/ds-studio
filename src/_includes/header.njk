@@ -15,19 +15,19 @@
   </div>
   <nav id="main-nav">
     <ul role="list" class="main-nav-list">
-      <li class="site-nav-li">
+      <li class='site-nav-li {% if "/" == page.url %}current-page-li{% endif %}'>
         <a href="/">home</a>
       </li>
-      <li class="site-nav-li">
+      <li class='site-nav-li {% if "/lessons/" in page.url %}current-page-li{% endif %}'>
         <a href="/lessons/">lessons</a>
       </li>
-      <li class="site-nav-li">
+      <li class='site-nav-li {% if "/tutorials/" in page.url %}current-page-li{% endif %}'>
         <a href="/tutorials/">tutorials</a>
       </li>
-      <li class="site-nav-li">
+      <li class='site-nav-li {% if "/blog/" in page.url %}current-page-li{% endif %}'>
         <a href="/blog/">blog</a>
       </li>
-      <li class="site-nav-li">
+      <li class='site-nav-li {% if "/contact/" in page.url %}current-page-li{% endif %}'>
         <a href="/contact/">contact</a>
       </li>
     </ul>
