@@ -1,9 +1,11 @@
 <header class="page-header">
+  <input type="checkbox" name="hidden-checkbox" id="hidden-checkbox">
+
   <div class="header-flex-wrapper">
     <a href="/"><svg class="logo-svg">
       <use href="#logo"></use>
     </svg></a>
-    <button class="main-menu-btn">
+    <label for="hidden-checkbox" class="main-menu-btn" role="button">
       <svg class="violin-svg">
         <use href="#violin"></use>
       </svg>
@@ -11,9 +13,10 @@
         <use href="#bow"></use>
       </svg>
       <span>menu</span>
-    </button>
+    </label>
   </div>
-  <nav id="main-nav">
+
+  <nav class="main-nav">
     <ul role="list" class="main-nav-list">
       <li class='site-nav-li {% if "/" == page.url %}current-page-li{% endif %}'>
         <a href="/">home</a>
