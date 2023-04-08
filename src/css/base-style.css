@@ -85,24 +85,17 @@ body {
   background-repeat: repeat;
   font-family: var(--ff-body);
   font-size: var(--fs-body);
-  padding: 1.5em;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr 1em;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  gap: 1em;
+  padding: 1.5em 1.5em 0 1.5em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.site-nav-li, .site-nav-li::after, .site-nav-li::before {
+.site-nav-li,
+.site-nav-li::after,
+.site-nav-li::before {
   font-family: var(--ff-heading);
   font-size: 1.3em;
-}
-
-header {
-  grid-area: header;
 }
 
 .header-flex-wrapper {
@@ -186,14 +179,18 @@ input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
 }
 
 main {
-  grid-area: main;
-  overflow-y: scroll;
+  flex: 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: bold;
-  margin-top: .5em;
-  margin-bottom: .2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
 }
 
 footer {
@@ -202,12 +199,12 @@ footer {
 }
 
 @media screen and (min-width: 75ch) {
-  body {
-    grid-template-columns: 1fr 75ch 1fr;
-    grid-template-areas:
-      "a header b"
-      "a main b"
-      "a footer b";
+  header,
+  main {
+    width: 100%;
+    max-width: 75ch;
+    /* need width set to get nav flexbox to behave */
+    align-self: center;
   }
 
   .header-flex-wrapper {
@@ -236,28 +233,23 @@ footer {
     list-style: none;
     justify-content: space-evenly;
   }
-
-  footer {
-    grid-area: footer;
-  }
 }
 
 @media screen and (min-width: 1400px) {
-  
-  body {
-    grid-template-columns: 1fr max-content 1fr;
-  }
-  
   header {
+    width: 150ch;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
   }
+
+  main {
+    width: 150ch;
+  }
+
   .main-nav-list {
     gap: 4em;
   }
 }
-
-
 
 /* || UTILITIES */
 
