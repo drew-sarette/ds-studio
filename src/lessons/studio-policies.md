@@ -1,9 +1,11 @@
 ---
 title: Studio Policies
-tags: policies
 date: 2023-04-06
+layout: "layouts/base.njk"
+eleventyNavigation:
+    key: Studio Policies
+    parent: lessons
 description: All the details about scheduling, payments, what to expect in lessons, etc. are spelled out here!
-permalink: /studio-docs/policies/
 ---
 
 # Studio Policies
