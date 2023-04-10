@@ -1,6 +1,7 @@
 ---
 title: test
 author: Drew Sarette
+tags:
 date: 2023-03-28
 pdf: /assets/pdf/one-octave-vln.pdf
 img: /assets/img/scale.jpeg
