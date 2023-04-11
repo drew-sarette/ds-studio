@@ -1,19 +1,19 @@
 <nav class="main-nav">
     <ul role="list" class="main-nav-list">
-        <li class='site-nav-li {% if "/" == page.url %}current-page-li{% endif %}'>
-            <a href="/">home</a>
+        <li>
+            <a href="/" {% if "/" == page.url %}aria-current='page'{% endif %}>home</a>
         </li>
-        <li class='site-nav-li {% if "/lessons/" == page.url %}current-page-li{% endif %}'>
-            <a href="/lessons/">lessons</a>
+        <li>
+            <a href="/lessons/" {% if "/lessons/" in page.url %}aria-current='page'{% endif %}>lessons</a>
         </li>
-        <li class='site-nav-li {% if "/tutorials/" in page.url %}current-page-li{% endif %}'>
-            <a href="/tutorials/">tutorials</a>
+        <li>
+            <a href="/tutorials/" {% if "/tutorials/" in page.url %}aria-current='page'{% endif %}>tutorials</a>
         </li>
-        <li class='site-nav-li {% if "/blog/" in page.url %}current-page-li{% endif %}'>
-            <a href="/blog/">blog</a>
+        <li>
+            <a href="/blog/" {% if "/blog/" in page.url %}aria-current='page'{% endif %}>blog</a>
         </li>
-        <li class='site-nav-li {% if "/contact/" == page.url %}current-page-li{% endif %}'>
-            <a href="/contact/">contact</a>
+        <li>
+            <a href="/contact/" {% if "/contact/" == page.url %}aria-current='page'{% endif %}>contact</a>
         </li>
     </ul>
 </nav>

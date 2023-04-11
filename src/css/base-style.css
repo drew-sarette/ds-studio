@@ -36,6 +36,14 @@ dd {
   margin: 0;
 }
 
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul:where([role="list"]),
+ol:where([role="list"]) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -83,29 +91,19 @@ body {
   flex-direction: column;
 }
 
-.hidden-checkbox {
+/* Header */
+#hidden-checkbox {
   display: none;
 }
 
-.site-nav-li,
-.site-nav-li::after,
-.site-nav-li::before {
+.main-nav {
   font-family: var(--ff-heading);
-  font-size: 1.3em !important;
+  font-size: 1.3em;
 }
 
 .header-flex-wrapper {
   display: flex;
   justify-content: space-between;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--clr-text-primary)
 }
 
 nav {
@@ -117,7 +115,7 @@ nav {
 }
 
 input[name="hidden-checkbox"]:checked ~ .main-nav {
-  height: calc(10 * 40px);
+  height: calc(5 * 40px);
 }
 
 .logo-svg {
@@ -165,21 +163,20 @@ input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
   color: var(--clr-text-primary);
 }
 
-.current-page-li {
+[aria-current] {
   font-weight: bolder;
 }
 
-.current-page-li a::before {
-  content: "||:  ";
+[aria-current]::before {
+  content: "||:  "
 }
 
-.current-page-li a::after {
+[aria-current]::after {
   content: "  :||";
 }
 
 main {
   flex: 1;
-  
 }
 
 h1,
