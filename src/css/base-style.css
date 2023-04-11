@@ -91,6 +91,21 @@ body {
   flex-direction: column;
 }
 
+#skip-to-main {
+  color: var(--clr-text-primary);
+  position: absolute;
+  top: -1.8em;
+  transition: top 0.2s ease-in-out; /* adjust this value to change the duration of the slide animation */
+}
+
+#skip-to-main:focus {
+  top: 0px;
+  transition-delay: 0s;
+}
+
+#skip-to-main:not(:focus) {
+  transition-delay: 1s; /* adjust this value to change the delay */
+}
 /* Header */
 #hidden-checkbox {
   display: none;
