@@ -95,11 +95,13 @@ body {
   color: var(--clr-text-primary);
   position: absolute;
   top: -1.8em;
+  left: 50%;
+  translate: -50%;
   transition: top 0.2s ease-in-out; /* adjust this value to change the duration of the slide animation */
 }
 
 #skip-to-main:focus {
-  top: 0px;
+  top: 5px;
   transition-delay: 0s;
 }
 

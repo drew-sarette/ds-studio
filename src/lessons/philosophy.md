@@ -1,15 +1,6 @@
 ---
 title: Phil
-tags: phil
 date: 2023-04-07
-eleventyNavigation: 
-  key: philosophy
-  parent: about
-description:
-  Drew believes the teacher’s role is to guide and accompany the student on a journey of discovery, developing a
-  positive life-long relationship with music through the violin. Based on the Suzuki method and twenty years of
-  traditional training, Drew uses demonstrations, stories, games, and graded repertoire to get students to experience and
-  internalize beautiful tone, healthy motion patterns, and fluent instrumental technique.
 img: src/assets/img/headshot.jpg
 ---
 
