@@ -3,7 +3,7 @@ title: Studio Policies
 date: 2023-04-06
 layout: "layouts/base.njk"
 eleventyNavigation:
-    key: Studio Policies
+    key: studio solicies
     parent: lessons
 description: All the details about scheduling, payments, what to expect in lessons, etc. are spelled out here!
 ---

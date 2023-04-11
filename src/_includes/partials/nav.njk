@@ -1,7 +1,19 @@
-{% set navigationOptions = {
-  listClass: "main-nav-list",
-  listItemClass: "site-nav-li"
-} %}
 <nav class="main-nav">
-        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | highlightCurrentPage(page.url) | safe }}
+    <ul role="list" class="main-nav-list">
+        <li class='site-nav-li {% if "/" == page.url %}current-page-li{% endif %}'>
+            <a href="/">home</a>
+        </li>
+        <li class='site-nav-li {% if "/lessons/" == page.url %}current-page-li{% endif %}'>
+            <a href="/lessons/">lessons</a>
+        </li>
+        <li class='site-nav-li {% if "/tutorials/" in page.url %}current-page-li{% endif %}'>
+            <a href="/tutorials/">tutorials</a>
+        </li>
+        <li class='site-nav-li {% if "/blog/" in page.url %}current-page-li{% endif %}'>
+            <a href="/blog/">blog</a>
+        </li>
+        <li class='site-nav-li {% if "/contact/" == page.url %}current-page-li{% endif %}'>
+            <a href="/contact/">contact</a>
+        </li>
+    </ul>
 </nav>

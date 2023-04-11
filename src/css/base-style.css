@@ -36,13 +36,6 @@ dd {
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul:where([role="list"]),
-ol:where([role="list"]) {
-  margin: 0;
-  padding: 0;
-}
-
 /* Set core root defaults */
 html:focus-within {
   scroll-behavior: smooth;
@@ -86,21 +79,33 @@ body {
   font-family: var(--ff-body);
   font-size: var(--fs-body);
   padding: 1.5em 1.5em 0 1.5em;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.hidden-checkbox {
+  display: none;
 }
 
 .site-nav-li,
 .site-nav-li::after,
 .site-nav-li::before {
   font-family: var(--ff-heading);
-  font-size: 1.3em;
+  font-size: 1.3em !important;
 }
 
 .header-flex-wrapper {
   display: flex;
   justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--clr-text-primary)
 }
 
 nav {
@@ -112,7 +117,7 @@ nav {
 }
 
 input[name="hidden-checkbox"]:checked ~ .main-nav {
-  height: calc(5 * 40px);
+  height: calc(10 * 40px);
 }
 
 .logo-svg {
@@ -127,10 +132,6 @@ input[name="hidden-checkbox"]:checked ~ .main-nav {
   background: transparent;
   border: none;
   text-align: center;
-}
-
-#hidden-checkbox {
-  display: none;
 }
 
 .violin-svg {
@@ -165,16 +166,14 @@ input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
 }
 
 .current-page-li {
-  list-style-type: none;
-  list-style-position: inside;
   font-weight: bolder;
 }
 
-.current-page-li::before {
+.current-page-li a::before {
   content: "||:  ";
 }
 
-.current-page-li::after {
+.current-page-li a::after {
   content: "  :||";
 }
 
