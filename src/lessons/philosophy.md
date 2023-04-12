@@ -1,7 +1,14 @@
 ---
-title: Phil
+title: Philosophy
 date: 2023-04-07
-img: src/assets/img/headshot.jpg
+img: ../assets/img/headshot.jpg
+description: Some basic principles I base my teaching style on.
 ---
+# Philosophy
+The Suzuki teaching philosophy is based on the idea that music is a language, and that it can be learned in the same way that we learn our native tongue. I wholeheartedly accept this because it is a natural way to learn that is accessible to all people who speak a language, and because it recognizes the value of music as a language that brings people together.
 
-Drew Sarette is a professional violinist and teacher with 10+ years experience working with students of all ages, experience levels, and backgrounds. With degrees in performance and pedagogy from Samford University and The University of Louisville, Drew has trained with some of the most recognized and respected violinists, including David Updegraff and Hal Grossman. He performs regularly with orchestras including the Huntsville Symphony Orchestra and Orchestra Kentucky Bowling Green. Versed in Suzuki and traditional teaching techniques, Drew incorporates a well-rounded approach to teaching that emphasizes proper technique, musicality, and a love for the art of violin playing.
+## Student, Parent, Teacher
+Dr. Suzuki recognized that the student, parent, and teacher must all cooperate fully for the student to be successful, especially for young children. 
+
+# Listening
+

@@ -1,9 +1,6 @@
 :root {
   --fs-body: 18px;
-  --fs-heading: 40px;
-  --fs-subheading: 28px;
-  --fs-secondary: 16px;
-
+  
   --ff-heading: "IM Fell Double Pica", sans-serif;
   --ff-body: "IM Fell Double Pica", sans-serif;
 
@@ -97,7 +94,7 @@ body {
   top: -1.8em;
   left: 50%;
   translate: -50%;
-  transition: top 0.2s ease-in-out; /* adjust this value to change the duration of the slide animation */
+  transition: top 0.2s ease-in-out; 
 }
 
 #skip-to-main:focus {
@@ -106,7 +103,7 @@ body {
 }
 
 #skip-to-main:not(:focus) {
-  transition-delay: 1s; /* adjust this value to change the delay */
+  transition-delay: 1s; 
 }
 /* Header */
 #hidden-checkbox {
@@ -192,23 +189,58 @@ input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
   content: "  :||";
 }
 
+/* || Main */
 main {
   flex: 1;
 }
 
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2
+{
+  line-height: 1em;
   font-weight: bold;
   margin-top: 0.5em;
   margin-bottom: 0.2em;
 }
 
+.snippet a {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: .3em;
+  gap: 1em;
+  text-decoration: none;
+  color: var(--clr-text-primary)
+}
+
+.snippet .img-wrapper {
+  width: 4em;
+  height: 4em;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* || Footer */
 footer {
-  font-size: var(--fs-secondary);
+  font-size: calc(var(--fs-body) - 3);
   text-align: center;
 }
 
