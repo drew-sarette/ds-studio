@@ -9,8 +9,17 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IM+Fell+Double+Pica:ital@0;1&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="/css/base-style.css">
         <title>DS violin studio</title>
+        {% set css %}
+            {% include "css/reset.css" %}
+            {% include "css/base-style.css" %}
+            {% if stylesheet %}
+                {% include stylesheet %}
+            {% endif %}
+        {% endset %}
+        <style>
+            {{css | cssmin | safe}}
+        </style>
     </head>
     <body>
         <a href="#main-content" id="skip-to-main">Skip to main content</a>
@@ -20,5 +29,5 @@
         </main>
         {% include 'partials/footer.njk' %}
     </body>
-    {% include 'partials/sprites.svg.njk'%}
+    {% include 'partials/sprites.svg.njk' %}
 </html>
