@@ -215,13 +215,36 @@ h2
   margin-bottom: 0.2em;
 }
 
+.services-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lessons-button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  padding: .5em;
+  color: var(--clr-accent);
+  background: #11111111;
+  border-radius: 30px;
+}
+
+.lessons-button:hover,
+.lessons-button:focus {
+  background: #11111177;
+  color: #fff;
+}
+
 .snippet a {
   display: flex;
   align-items: flex-start;
   margin-bottom: .3em;
   gap: 1em;
   text-decoration: none;
-  color: var(--clr-text-primary)
+  color: var(--clr-text-primary);
 }
 
 .snippet .img-wrapper {
@@ -279,22 +302,18 @@ footer {
     list-style: none;
     justify-content: space-evenly;
   }
+
+  .services-flex {
+    flex-direction: row ;
+    justify-content: space-around;
+  }
 }
 
-@media screen and (min-width: 1400px) {
-  header {
-    max-width: 150ch;
-    display: flex;
-    align-items: center;
+@media screen and (min-width: 140ch) {
+  header, main  {
+    max-width: 90ch;
   }
-
-  main {
-    max-width: 150ch;
-  }
-
-  .main-nav-list {
-    gap: 4em;
-  }
+  
 }
 
 /* || UTILITIES */
