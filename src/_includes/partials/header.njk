@@ -2,18 +2,12 @@
   <input type="checkbox" name="hidden-checkbox" id="hidden-checkbox">
     <div class="header-flex-wrapper">
       <a href="/" title="Home" tabindex="-1">
-        <svg class="logo-svg">
-          <use href="#logo"></use>
-        </svg>
+        {% include "svg/logo.njk"%}
       </a>
-      <button class="main-menu-btn">
+      <button class="main-menu-btn" aria-label="main menu">
         <label for="hidden-checkbox" >
-          <svg class="violin-svg">
-            <use href="#violin"></use>
-          </svg>
-          <svg class="bow-svg">
-            <use href="#bow"></use>
-          </svg>
+          {% include "svg/violin.njk" %}
+          {% include "svg/bow.njk" %}
           <span>menu</span>
         </label>
       </button>
