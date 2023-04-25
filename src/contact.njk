@@ -1,35 +1,43 @@
 ---
 title: DSVS | Contact
 layout: 'layouts/base.njk'
-stylesheet: 'css/index.css'
-
+stylesheet: 'css/contact.css'
 ---
-  <h1>Contact Me</h1>
-  <p>Please use the form below to get in touch with me. I'll do my best to get back to you as soon as possible.</p>
-  <form name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
 
-    <div class="input-container">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-    </div>
-
-    <div class="input-container">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-    </div>
-
-    <div class="input-container">
-      <label for="subject">Subject:</label>
-      <input type="text" id="subject" name="subject" required>
-    </div>
-
-    <div class="input-container">
-      <label for="message">Message:</label><br>
-      <textarea id="message" name="message" rows="5" cols="30" required></textarea>
-    </div>
-
-    <div class="input-container">
-      <input type="submit" value="Submit">
-    </div>
-  </form>
+<h1>Contact Me</h1>
+<p>Please use the form below to get in touch with me. I'll do my best to get back to you as soon as possible.</p>
+<form action="/submit-form" method="post">
+  <label for="name">Name: <input type="text" id="name" name="name" placeholder="firstname lastname" required>
+  </label>
+  <label for="email">Email: <input type="email" id="email" name="email" placeholder="abc@email.com" required>
+  </label>
+  <label for="phone">Phone (optional): <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
+  </label>
+  <label for="message">Message:
+    <textarea id="message" name="message" placeholder="Enter your message here" rows="5" required></textarea>
+  </label>
+  <button type="submit">Submit</button>
+</form>
+<script>
+  const phone = document.getElementById("phone");
+  phone.addEventListener("keypress", function (ev) {
+    ev.preventDefault();
+    ev.stopPropagation();
+    if (/^[0-9]$/.test(ev.key)) {
+      const numericString = phone.value.replace(/[^0-9]/g, "") + ev.key;
+      const arr = Array.from(numericString);
+      let result = "";
+      for (let i = 0; i < arr.length && i < 10; i++) {
+        if (i === 0) {
+          result = "(";
+        } else if (i === 3) {
+          result += ") ";
+        } else if (i === 6) {
+          result += "-";
+        }
+        result += arr[i];
+      }
+      phone.value = result;
+    }
+  });
+</script>
