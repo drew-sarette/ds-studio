@@ -5,7 +5,7 @@ date: 2023-03-27
 pdf: /assets/pdf/one-octave-vln.pdf
 img: https://picsum.photos/200
 imgAlt: Musical scale
-videoSrc: https://player.vimeo.com/video/573506780?h=93df85e51d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
+vimeoId: 573506780
 description: Scales and arpeggios are essential to becoming fluent in the language of music. Read these practice tips to start your musical journey on the right foot, or simply refresh your basics.
 ---
 
