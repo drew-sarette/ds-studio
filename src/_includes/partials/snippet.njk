@@ -1,0 +1,18 @@
+<li class="snippet">
+    <a href="{{ post.url }}">
+        <div class="img-wrapper">
+            <img src="{{ post.data.img }}" alt="{{ post.data.imgAlt }}">
+        </div>
+        <div>
+            <h3 class="snippet-title">
+                {{ post.data.title }}
+            </h3>
+            <p class="snippet-meta">by
+                <span>{{ post.data.author }}</span>
+                on
+                <span>{{ post.data.date | postDate }}</span>
+            </p>
+            <p class="snippet-body">{{ post.data.description }}</p>
+        </div>
+    </a>
+</li>
