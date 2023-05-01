@@ -1,0 +1,256 @@
+:root {
+  --fs-body: 18px;
+  
+  --ff-heading: "IM Fell Double Pica", sans-serif;
+  --ff-body: "IM Fell Double Pica", sans-serif;
+
+  --clr-text-primary: #151515;
+  --clr-accent: #3E00FF;
+}
+
+/* || MOBILE STYLES */
+body {
+  background-image: url("/assets/img/bg.svg");
+  background-repeat: repeat;
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  padding: 1.5em 1.5em 0 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+#skip-to-main {
+  color: var(--clr-text-primary);
+  position: absolute;
+  top: -1.8em;
+  left: 50%;
+  translate: -50%;
+  transition: top 0.2s ease-in-out; 
+}
+
+#skip-to-main:focus {
+  top: 5px;
+  transition-delay: 0s;
+}
+
+#skip-to-main:not(:focus) {
+  transition-delay: 1s; 
+}
+/* Header */
+#hidden-checkbox {
+  display: none;
+}
+
+.main-nav {
+  font-family: var(--ff-heading);
+  font-size: 1.3em;
+}
+
+.header-flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav {
+  height: 0px;
+  overflow: hidden;
+  transition-property: height;
+  transition-duration: 0.3s;
+  line-height: 40px;
+}
+
+input[name="hidden-checkbox"]:checked ~ .main-nav {
+  height: calc(5 * 40px);
+}
+
+.logo-svg {
+  height: 100px;
+  width: 150px;
+}
+.main-menu-btn {
+  border: none;
+  background: none;
+}
+
+.main-menu-btn label {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  background: transparent;
+  border: none;
+  align-items: center;
+}
+
+.violin-svg {
+  width: 150px;
+  height: 50px;
+  transition: transform;
+  transition-duration: 0.3s;
+}
+
+.bow-svg {
+  width: 150px;
+  height: 25px;
+  transition: transform;
+  transition-duration: 0.3s;
+}
+
+input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .violin-svg {
+  transform: rotate(30deg);
+}
+
+input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
+  transform: rotate(-45deg) translate(38px, -10px);
+}
+
+.main-nav-list {
+  text-align: center;
+}
+
+.main-nav-list a {
+  text-decoration: none;
+  color: var(--clr-text-primary);
+}
+
+[aria-current] {
+  font-weight: bolder;
+}
+
+[aria-current]::before {
+  content: "||:  "
+}
+
+[aria-current]::after {
+  content: "  :||";
+}
+
+/* || Main */
+main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.7em;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+h1,
+h2,
+h3
+{
+  line-height: 1em;
+  font-weight: bold;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+.snippet a {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: .3em;
+  gap: 1em;
+  text-decoration: none;
+  color: var(--clr-text-primary);
+}
+
+.snippet .img-wrapper {
+  width: 4em;
+  height: 4em;
+  /* border-radius: 50%; */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 40px;
+  padding: 0.5em;
+  color: #eee;
+  background: var(--clr-accent);
+  border-radius: 4px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  filter: brightness(90%);
+}
+
+/* || Footer */
+footer {
+  font-size: calc(var(--fs-body) - 3);
+  text-align: center;
+}
+
+@media screen and (min-width: 75ch) {
+  header,
+  main {
+    width: 100%;
+    max-width: 75ch;
+    /* need width set to get nav flexbox to behave */
+    align-self: center;
+  }
+
+  .header-flex-wrapper {
+    justify-content: flex-start;
+  }
+
+  .main-menu-btn span {
+    display: none;
+  }
+
+  /* need important to override more specific selectors */
+  .bow-svg {
+    transform: translate(-40px, -30px) rotate(-65deg) !important;
+  }
+
+  .violin-svg {
+    transform: translate(-17px, 10px) rotate(60deg) !important;
+  }
+
+  nav {
+    height: unset !important;
+  }
+
+  .main-nav-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 140ch) {
+  header, main  {
+    max-width: 90ch;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+  }
+
+  .main-nav {
+    flex-grow: 1;
+  }
+  
+  .main-nav-list {
+    display: flex;
+    justify-content: space-between
+  }
+}
+

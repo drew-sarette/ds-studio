@@ -1,0 +1,29 @@
+/* HOME PAGE => main */
+
+/* Personal Introduction */
+
+/* Services */
+.services-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Testimonials */
+.testimonial {
+    margin-bottom: 1em;
+}
+
+.testimonial cite {
+    text-align: center;
+}
+
+@media screen and (min-width: 75ch) {
+  .services-flex {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 140ch) {
+}
