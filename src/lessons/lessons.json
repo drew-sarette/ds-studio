@@ -1,4 +1,5 @@
 {
     "tags": "docs",
+    "author": "Drew Sarette",
     "layout": "layouts/article.njk"
 }

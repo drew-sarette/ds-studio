@@ -5,6 +5,7 @@ const CleanCSS = require("clean-css");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy("./src/admin");
+  eleventyConfig.addPassthroughCopy({ "./src/favicon" : "/" });
 
   eleventyConfig.addShortcode('currentYear', () => new Date().getFullYear());
  
@@ -16,14 +17,13 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
 
-  eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getFilteredByGlob("./blog/*.md");
-  });
+  // eleventyConfig.addCollection("posts", function(collection) {
+  //   return collection.getFilteredByGlob("./blog/*.md");
+  // });
 
-  eleventyConfig.addCollection("tutorials", function(collection) {
-    return collection.getFilteredByGlob(".tutorials/*.md");
-  });
-
+  // eleventyConfig.addCollection("tutorials", function(collection) {
+  //   return collection.getFilteredByGlob(".tutorials/*.md");
+  // });
     
   return {
     dir: {

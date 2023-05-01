@@ -1,10 +1,9 @@
 ---
 title: One Octave Scales and Arpeggios
-tags:
 author: Drew Sarette
 date: 2023-03-27
 pdf: /assets/pdf/one-octave-vln.pdf
-img: /assets/img/scale.jpeg
+img: https://picsum.photos/200
 imgAlt: Musical scale
 videoSrc: https://player.vimeo.com/video/573506780?h=93df85e51d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479
 description: Scales and arpeggios are essential to becoming fluent in the language of music. Read these practice tips to start your musical journey on the right foot, or simply refresh your basics.
@@ -22,11 +21,12 @@ Here are three practice ideas to help you get the most out of your scale practic
 
 3. **Slow, medium, and fast:** Set your metronome to 60bpm. Play the scale in half notes, being careful to count 2 beats for each note. When you have mastered that, move on to quarter notes, and then eighth notes. If that becomes easy, add slurs on every 2, 4, or 8 notes.
 
-
 # Arpeggios
-Arpeggios are often overlooked. Just as ubiquitous as scales, they afford the perfect opportunity to practice rapid string crossings, common fingering patterns, and provide a basis for understanding chords in music theory. Practice the arpeggio set that goes with each scale slowly for intonation. For added challenge, try to leave down each finger as long as possible. 
+
+Arpeggios are often overlooked. Just as ubiquitous as scales, they afford the perfect opportunity to practice rapid string crossings, common fingering patterns, and provide a basis for understanding chords in music theory. Practice the arpeggio set that goes with each scale slowly for intonation. For added challenge, try to leave down each finger as long as possible.
 
 # Conclusion
+
 Make sure to give yourself enough time each day to practice the same set of scale and arpeggio patterns multiple ways. That could take as little as 3 or as much as 5 minutes depending on how long you plan to practice. Also make sure to learn each set thoroughly before moving on. Practice only one set in any given week.
 
 With the guidance of a good teacher, your scale (& arpeggio) practice should not grow dull. Instead, each week you should have a new idea to incorporate. The as you gain fluency, your reward will be accellerated progress in the pieces you are learning, better understanding of how the music is structured, and the ability to sight-read and learn new music faster in the future.

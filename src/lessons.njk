@@ -11,20 +11,8 @@ stylesheet: 'css/index.css'
     <h2>Before your first lesson...</h2>
     <p>These articles contain everything you need to know before your first lesson.</p>
     <ul role="list">
-        {% for doc in collections.docs %}
-            <li class="snippet">
-                <a href="{{ doc.url }}">
-                <div class="img-wrapper">
-                    <img src="{{ doc.data.img }}" alt="{{ doc.data.imgAlt }}">
-                </div>
-                <div>
-                    <h3>
-                        {{ doc.data.title }}
-                    </h3>
-                    <p>{{ doc.data.description }}</p>
-                </div>
-                </a>
-            </li>
+        {% for post in collections.docs %}
+            {% include "partials/snippet.njk" %}
         {% endfor %}
     </ul>
 </section>

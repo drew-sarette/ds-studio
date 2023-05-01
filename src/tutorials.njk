@@ -3,13 +3,12 @@ title: DS Violin Studio | tutorials
 layout: 'layouts/base.njk'
 stylesheet: 'css/index.css'
 ---
-<h1>This is from tutorials.njk</h1>
-
-{# <div class="section container">
-  <h1 class="section-title">Most recent</h1>
-  <ul role="list" class="articles__list flow">
-    {%- for post in collections.post | reverse -%}
-      {% include "article-snippet.njk" %}
-    {%- endfor -%}
-  </ul>
-</div> #}
+<h1>Tutorials</h1>
+<p>These tutorials contain written instruction on how best to practice various pieces, techniques, and etudes. Many also
+  contain video and downloadable pdfs! It is intended to be a resource for students who need a particular handout again,
+  want a refresher on a some topic, or want to see an example performance of a piece they are learning.</p>
+<ul role="list">
+  {% for post in collections.tutorials | reverse %}
+    {% include "partials/snippet.njk" %}
+  {% endfor %}
+</ul>

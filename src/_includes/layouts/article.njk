@@ -14,5 +14,11 @@ layout: 'layouts/base.njk'
             </figcaption>
         </figure>
     </div>
+    {% if videoSrc %}
+        <figure style="padding:56.25% 0 0 0;position:relative;" class="vimeo-embed">
+            <iframe src="{{ videoSrc }}" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen="allowfullscreen" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Video Introduction - Drew Sarette"></iframe>
+        </figure>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+    {% endif %}
     {{ content | safe }}
 </article>
