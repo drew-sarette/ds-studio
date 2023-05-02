@@ -1,15 +1,29 @@
-<nav class="paginated-nav">
-    <ul>
-        {% for page in pagination.pages %}
-            {% if page.url == pagination.href %}
-                <li>
-                    <a href="{{ page.url }}" class="active">{{ page.pageNumber }}</a>
-                </li>
-            {% else %}
-                <li>
-                    <a href="{{ page.url }}">{{ page.pageNumber }}</a>
-                </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
+<nav aria-label="Change page">
+  <ol role="list" class="pagination-list">
+    {% if page.url != pagination.href.first %}
+      <li class="pagination-item">
+        <a class="pagination-link" href="{{ pagination.href.first }}">First</a>
+      </li>
+    {% endif %}
+    {% if pagination.href.previous %}
+      <li class="pagination-item">
+        <a class="pagination-link" href="{{ pagination.href.previous }}">Previous</a>
+      </li>
+    {% endif %}
+    {%- for pageEntry in pagination.pages %}
+      <li class="pagination-item">
+        <a class="pagination-link" href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}>{{ loop.index }}</a>
+      </li>
+    {%- endfor %}
+    {% if pagination.href.next %}
+      <li class="pagination-item">
+        <a class="pagination-link" href="{{ pagination.href.next }}">Next</a>
+      </li>
+    {% endif %}
+    {% if page.url != pagination.href.last %}
+      <li class="pagination-item">
+        <a class="pagination-link" href="{{ pagination.href.last }}">Last</a>
+      </li>
+    {% endif %}
+  </ol>
 </nav>

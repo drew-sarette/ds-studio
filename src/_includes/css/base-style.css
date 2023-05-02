@@ -189,6 +189,23 @@ h2
   filter: brightness(90%);
 }
 
+.pagination-list {
+  display: flex;
+  gap: .5rem;
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: var(--clr-text-primary);
+  padding: .5rem;
+  line-height: 3rem;
+}
+
+.pagination-link[aria-current] {
+  border: 2px solid black;
+  font-weight: bolder;
+}
+
 /* || Footer */
 footer {
   font-size: calc(var(--fs-body) - 3);
