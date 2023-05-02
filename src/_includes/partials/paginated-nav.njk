@@ -1,0 +1,15 @@
+<nav class="paginated-nav">
+    <ul>
+        {% for page in pagination.pages %}
+            {% if page.url == pagination.href %}
+                <li>
+                    <a href="{{ page.url }}" class="active">{{ page.pageNumber }}</a>
+                </li>
+            {% else %}
+                <li>
+                    <a href="{{ page.url }}">{{ page.pageNumber }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</nav>

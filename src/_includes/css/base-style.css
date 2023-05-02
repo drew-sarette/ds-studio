@@ -112,15 +112,15 @@ input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
   color: var(--clr-text-primary);
 }
 
-[aria-current] {
+.main-nav-li[aria-current] {
   font-weight: bolder;
 }
 
-[aria-current]::before {
+.main-nav-li[aria-current]::before {
   content: "||:  "
 }
 
-[aria-current]::after {
+.main-nav-li[aria-current]::after {
   content: "  :||";
 }
 

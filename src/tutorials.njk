@@ -2,13 +2,25 @@
 title: DS Violin Studio | tutorials
 layout: 'layouts/base.njk'
 stylesheet: 'css/index.css'
+pagination:
+  data: collections.tutorials
+  size: 1
 ---
 <h1>Tutorials</h1>
 <p>These tutorials contain written instruction on how best to practice various pieces, techniques, and etudes. Many also
   contain video and downloadable pdfs! It is intended to be a resource for students who need a particular handout again,
   want a refresher on a some topic, or want to see an example performance of a piece they are learning.</p>
+
 <ul role="list">
-  {% for post in collections.tutorials | reverse %}
+  {% for post in pagination.items | reverse %}
     {% include "partials/snippet.njk" %}
   {% endfor %}
 </ul>
+
+<nav aria-label="Pagingated tutorial entries">
+  <ol>
+{%- for pageEntry in pagination.pages %}
+    <li><a href="{{ pagination.hrefs[ loop.index0 ] }}"{% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page"{% endif %}>Page {{ loop.index }}</a></li>
+{%- endfor %}
+  </ol>
+</nav>

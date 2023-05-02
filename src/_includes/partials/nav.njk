@@ -1,19 +1,19 @@
 <nav class="main-nav">
     <ul role="list" class="main-nav-list">
         <li>
-            <a href="/" {% if "/" == page.url %}aria-current='page'{% endif %}>home</a>
+            <a href="/" {% if "/" == page.url %}aria-current='page'{% endif %} class="main-nav-li">home</a>
         </li>
         <li>
-            <a href="/lessons/" {% if "/lessons/" in page.url %}aria-current='page'{% endif %}>lessons</a>
+            <a href="/lessons/" {% if "/lessons/" in page.url %}aria-current='page'{% endif %} class="main-nav-li">lessons</a>
         </li>
         <li>
-            <a href="/tutorials/" {% if "/tutorials/" in page.url %}aria-current='page'{% endif %}>tutorials</a>
+            <a href="/tutorials/" {% if "/tutorials/" in page.url %}aria-current='page'{% endif %} class="main-nav-li">tutorials</a>
         </li>
         <li>
-            <a href="/blog/" {% if "/blog/" in page.url %}aria-current='page'{% endif %}>blog</a>
+            <a href="/blog/" {% if "/blog/" in page.url %}aria-current='page'{% endif %} class="main-nav-li">blog</a>
         </li>
         <li>
-            <a href="/contact/" {% if "/contact/" == page.url %}aria-current='page'{% endif %}>contact</a>
+            <a href="/contact/" {% if "/contact/" == page.url %}aria-current='page'{% endif %} class="main-nav-li">contact</a>
         </li>
     </ul>
 </nav>
