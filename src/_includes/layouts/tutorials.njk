@@ -1,33 +1,10 @@
 ---
-layout: 'layouts/base.njk'
+layout: "layouts/base.njk"
 ---
 
-{% block content %}
-    <h1>Tutorials</h1>
-    <ul>
-        {% for tutorial in collections.tutorials %}
-            <li>{{ tutorial.data.title }}</li>
-        {% endfor %}
-    </ul>
-    {% if pagination.pages.length > 1 %}
-        <nav>
-            <ul>
-                {% if pagination.previousPage %}
-                    <li>
-                        <a href="{{ pagination.previousPageUrl }}">Previous</a>
-                    </li>
-                {% endif %}
-                {% for page in pagination.pages %}
-                    <li {% if page.url == pagination.href %} aria-current="page" {% endif %}>
-                        <a href="{{ page.url }}">{{ page.pageNumber }}</a>
-                    </li>
-                {% endfor %}
-                {% if pagination.nextPage %}
-                    <li>
-                        <a href="{{ pagination.nextPageUrl }}">Next</a>
-                    </li>
-                {% endif %}
-            </ul>
-        </nav>
-    {% endif %}
-{% endblock %}
+{% include "partials/article.njk" %}
+
+{% set prev = collections.tutorials | getPreviousCollectionItem %}
+{% set next = collections.tutorials | getNextCollectionItem %}
+    
+{% include "partials/next-previous.njk" %}

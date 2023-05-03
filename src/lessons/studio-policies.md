@@ -2,7 +2,6 @@
 title: Studio Policies
 date: 2023-04-06
 img: ../assets/img/headshot.jpg
-layout: "layouts/base.njk"
 description: Everything you need to know about scheduling, cancellations, payment, instruments, etc...
 ---
 

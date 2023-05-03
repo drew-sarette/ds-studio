@@ -1,7 +1,3 @@
----
-layout: 'layouts/base.njk'
----
-
 <article class="main-article">
     <header class="article-header">
         <h1 class="article-title">
@@ -12,15 +8,15 @@ layout: 'layouts/base.njk'
     {% if vimeoId %}
         {{ vimeoId | vimeoEmbed(page.title) | safe }}
     {% elseif image %}
-            <figure class="article-figure">
+        <figure class="article-figure">
             <img class="article-main-img" src="{{ image }}" alt="{{ imageAlt }}">
-            <figcaption>
-                {{ imageAlt }}
-            </figcaption>
-        </figure>   
-    {% endif %}
-    {% if pdf %}
-        <a href="{{ pdf }}" class="download-link" download>Download PDF</a>
-    {% endif %}
-    {{ content | safe }}
-</article>
+                <figcaption>
+                    {{ imageAlt }}
+                </figcaption>
+            </figure>
+        {% endif %}
+        {% if pdf %}
+            <a href="{{ pdf }}" class="download-link" download>Download PDF</a>
+        {% endif %}
+        {{ content | safe }}
+    </article>

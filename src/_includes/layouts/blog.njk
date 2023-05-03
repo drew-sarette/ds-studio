@@ -1,0 +1,10 @@
+---
+layout: "layouts/base.njk"
+---
+
+{% include "partials/article.njk"%}
+
+{% set prev = collections.blog | getPreviousCollectionItem %}
+{% set next = collections.blog | getNextCollectionItem %}
+    
+{% include "partials/next-previous.njk" %}

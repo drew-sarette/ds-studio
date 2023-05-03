@@ -1,0 +1,10 @@
+    <nav aria-label="Select next or previous entry">
+        <ol class="page-nav">
+            {% if prev %}
+                <li><a href="{{ prev.url }}">previous: {{ prev.data.title }}</a></li>
+            {% endif %}
+            {% if next %}
+                <li><a href="{{ next.url }}">next: {{ next.data.title }}</a></li>
+            {% endif %}
+        </ol>
+    </nav>
