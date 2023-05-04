@@ -5,8 +5,6 @@ img: ../assets/img/headshot.jpg
 description: Everything you need to know about scheduling, cancellations, payment, instruments, etc...
 ---
 
-# Studio Policies
-
 ## Payment and Cancellation Policy
 - Payment for the month is due by the first lesson of that month. An invoice will be sent before that.
 - Cancellations may be made by phone or email at least one day in advance, or the day of in case of illness. I will make my best attempt to reschedule your lesson if you give me time!

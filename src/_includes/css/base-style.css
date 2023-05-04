@@ -51,7 +51,7 @@ body {
   justify-content: space-between;
 }
 
-nav {
+.main-nav {
   height: 0px;
   overflow: hidden;
   transition-property: height;
@@ -189,19 +189,25 @@ h2
   filter: brightness(90%);
 }
 
-.pagination-list {
+.secondary-nav-list {
   display: flex;
   gap: .5rem;
+  justify-content: space-between;
 }
 
-.pagination-link {
+.paginated.secondary-nav-list {
+  justify-content: flex-start;
+}
+
+.secondary-nav-link {
   text-decoration: none;
   color: var(--clr-text-primary);
   padding: .5rem;
   line-height: 3rem;
+  border: 2px solid var(--clr-text-primary);
 }
 
-.pagination-link[aria-current] {
+.secondary-nav-link[aria-current] {
   border: 2px solid black;
   font-weight: bolder;
 }
