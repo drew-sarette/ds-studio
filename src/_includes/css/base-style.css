@@ -213,7 +213,7 @@ footer {
 }
 
 @media screen and (min-width: 75ch) {
-  header,
+  .page-header,
   main {
     width: 100%;
     max-width: 75ch;
@@ -251,11 +251,11 @@ footer {
 }
 
 @media screen and (min-width: 140ch) {
-  header, main  {
+  .page-header, main  {
     max-width: 90ch;
   }
 
-  header {
+  .page-header {
     display: flex;
     align-items: center;
   }
