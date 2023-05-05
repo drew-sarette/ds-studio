@@ -5,14 +5,24 @@ stylesheet: 'css/index.css'
 pagination:
   data: collections.tutorials
   size: 10
+  reverse: true
 ---
+
 <h1>Tutorials</h1>
 <p>These tutorials contain written instruction on how best to practice various pieces, techniques, and etudes. Many also
   contain video and downloadable pdfs! It is intended to be a resource for students who need a particular handout again,
   want a refresher on a some topic, or want to see an example performance of a piece they are learning.</p>
-<ul role="list">
-  {% for post in pagination.items | reverse %}
-    {% include "partials/snippet.njk" %}
-  {% endfor %}
-</ul>
-{% include "partials/paginated-nav.njk" %}
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+  <script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+  <div id="search"></div>
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      new PagefindUI({element: "#search"});
+    });
+  </script>
+  <ul role="list">
+    {% for post in pagination.items %}
+      {% include "partials/snippet.njk" %}
+    {% endfor %}
+  </ul>
+  {% include "partials/paginated-nav.njk" %}
