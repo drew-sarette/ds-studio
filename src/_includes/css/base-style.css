@@ -1,6 +1,6 @@
 :root {
   --fs-body: 18px;
-  
+
   --ff-heading: "IM Fell Double Pica", sans-serif;
   --ff-body: "IM Fell Double Pica", sans-serif;
 
@@ -25,7 +25,7 @@ body {
   top: -1.8em;
   left: 50%;
   translate: -50%;
-  transition: top 0.2s ease-in-out; 
+  transition: top 0.2s ease-in-out;
 }
 
 #skip-to-main:focus {
@@ -34,7 +34,7 @@ body {
 }
 
 #skip-to-main:not(:focus) {
-  transition-delay: 1s; 
+  transition-delay: 1s;
 }
 /* Header */
 #hidden-checkbox {
@@ -117,7 +117,7 @@ input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
 }
 
 .main-nav-li[aria-current]::before {
-  content: "||:  "
+  content: "||:  ";
 }
 
 .main-nav-li[aria-current]::after {
@@ -142,8 +142,7 @@ h3 {
 }
 
 h1,
-h2
-{
+h2 {
   line-height: 1em;
   font-weight: bold;
   margin-top: 0.5em;
@@ -153,7 +152,7 @@ h2
 .snippet a {
   display: flex;
   align-items: flex-start;
-  margin-bottom: .3em;
+  margin-bottom: 0.3em;
   gap: 1em;
   text-decoration: none;
   color: var(--clr-text-primary);
@@ -191,7 +190,7 @@ h2
 
 .secondary-nav-list {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   justify-content: space-between;
 }
 
@@ -202,7 +201,7 @@ h2
 .secondary-nav-link {
   text-decoration: none;
   color: var(--clr-text-primary);
-  padding: .5rem;
+  padding: 0.5rem;
   line-height: 3rem;
   border: 2px solid var(--clr-text-primary);
 }
@@ -257,7 +256,8 @@ footer {
 }
 
 @media screen and (min-width: 140ch) {
-  .page-header, main  {
+  .page-header,
+  main {
     max-width: 90ch;
   }
 
@@ -269,10 +269,9 @@ footer {
   .main-nav {
     flex-grow: 1;
   }
-  
+
   .main-nav-list {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
   }
 }
-
