@@ -1,5 +1,0 @@
-{
-    "tags": "tutorials",
-    "layout": "layouts/tutorials.njk",
-    "stylesheet": "css/post.css"
-}

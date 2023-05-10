@@ -1,0 +1,27 @@
+<link href="/_pagefind/pagefind-ui.css" rel="stylesheet">
+    <style>:root
+    {
+        --pagefind-ui-scale: 1;
+        --pagefind-ui-primary: var(--clr-text-primary);
+        --pagefind-ui-text: var(--clr-text-primary);
+        --pagefind-ui-background: none;
+        --pagefind-ui-border: var(--clr-text-primary);
+        --pagefind-ui-tag: #eeeeee;
+        --pagefind-ui-border-width: 2px;
+        --pagefind-ui-border-radius: 2px;
+        --pagefind-ui-image-border-radius: 8px;
+        --pagefind-ui-image-box-ratio: 3 / 2;
+        --pagefind-ui-font: var(--ff-body);
+    }
+
+    .pagefind-ui {
+        margin: .5em 0;
+    }
+</style>
+<script src="/_pagefind/pagefind-ui.js" type="text/javascript"></script>
+<div id="pagefind"></div>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        new PagefindUI({element: "#pagefind"});
+    });
+</script>

@@ -60,7 +60,7 @@ body {
 }
 
 input[name="hidden-checkbox"]:checked ~ .main-nav {
-  height: calc(5 * 40px);
+  height: calc(4 * 40px);
 }
 
 .logo-svg {
@@ -123,6 +123,9 @@ input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
 .main-nav-li[aria-current]::after {
   content: "  :||";
 }
+
+/* search */
+
 
 /* || Main */
 main {

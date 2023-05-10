@@ -2,6 +2,18 @@
 title: blog
 layout: 'layouts/base.njk'
 stylesheet: 'css/index.css'
+pagination:
+  data: collections.blog
+  size: 10
+  reverse: true
 ---
-<h1>this is a blog</h1>
+
+<h1>{{ title }}</h1>
+<p>This is where I post tutorials on pieces I teach, arrangements I have made, personal projects, and performances.</p>
 {% include 'partials/search.njk' %}
+<ul role="list">
+    {% for post in pagination.items %}
+        {% include "partials/snippet.njk" %}
+    {% endfor %}
+</ul>
+{% include "partials/paginated-nav.njk" %}
