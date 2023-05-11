@@ -1,14 +1,24 @@
 ---
-title: test
-author: Drew Sarette
-tags:
-date: 2023-03-28
-pdf: /assets/pdf/one-octave-vln.pdf
-img: /assets/img/scale.jpeg
+img: /assets/screenshot-from-2023-03-31-21-01-49.png
 imgAlt: test
-description: aksdfhlkashfkjhskjfjsjfhks  khjsdfksjhfks slhkjdjd   dhhdkshkhj
+author: Drew Sarette
+title: test
+date: 2023-05-11T14:52:38.727Z
+pdf: /assets/shoulder-rests.pdf
+tags: null
+vimeoId: 818245543
+description: here is my updated blog post from the CMS
 ---
+## Edited post title
 
-What is Lorem Ipsum?
+![deluge in italy](https://earthobservatory.nasa.gov/images/151324/a-deluge-in-italy "Image title: Deluge in italy")
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+Edited post body
+list
+
+* item 1
+* item 2
+* item 3
+   **styled text**
+
+  **`code example`**<https://en.wikipedia.org/wiki/Example>
