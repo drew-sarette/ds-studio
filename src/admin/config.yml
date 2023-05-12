@@ -14,9 +14,9 @@ collections:
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "img", widget: "image", media_folder: "assets/img", public_folder: "/assets/img"}
+      - {label: "Image", name: "img", widget: "image", media_folder: "src/assets/img", public_folder: "/assets/img"}
       - {label: "Vimeo ID", name: "vimeoId", widget: "number"}
       - {label: "Image Alt", name: "imgAlt", widget: "string"}
-      - {label: "PDF", name: "pdf", widget: "file", allow_multiple: true, media_folder: "assets/pdf", public_folder: "/assets/pdf"}
+      - {label: "PDF", name: "pdf", widget: "file", allow_multiple: true, media_folder: "src/assets/pdf", public_folder: "/assets/pdf"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
