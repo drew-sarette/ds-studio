@@ -5,17 +5,18 @@ stylesheet: 'css/contact.css'
 ---
 <h1>{{ title }}</h1>
 <p>Please use the form below to get in touch with me. I'll do my best to get back to you as soon as possible.</p>
-<form action="/submit-form" method="post" class="contact-form">
-  <label class="contact-form-child" for="name">Name: <input type="text" id="name" name="name" placeholder="firstname lastname" required>
+<form action="/submit-form" method="post" class="contact-form"  data-netlify-recaptcha="true" netlify>
+  <label class="contact-form-child" for="name">Name: <input type="text" id="name" name="name" placeholder="full name" required>
   </label>
   <label class="contact-form-child" for="email">Email: <input type="email" id="email" name="email" placeholder="abc@email.com" required>
   </label>
-  <label class="contact-form-child" for="phone">Phone (optional): <input type="tel" id="phone" name="phone" placeholder="555-555-5555">
+  <label class="contact-form-child" for="phone">Phone (optional): <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
   </label>
   <label class="contact-form-child" for="message">Message:
     <textarea id="message" name="message" placeholder="Enter your message here" rows="5" required></textarea>
   </label>
   <button class="contact-form-child btn-primary" type="submit">Submit</button>
+  <div data-netlify-recaptcha="true"></div>
 </form>
 <script>
   const phone = document.getElementById("phone");
