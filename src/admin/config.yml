@@ -15,7 +15,7 @@ collections:
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "img", widget: "image", media_folder: "../assets/img", public_folder: "/assets/img" required: "false"}
+      - {label: "Image", name: "img", widget: "image", media_folder: "../assets/img", public_folder: "/assets/img", required: "false"}
       - {label: "Vimeo ID", name: "vimeoId", widget: "number", required: "false"}
       - {label: "Image Alt", name: "imgAlt", widget: "string", required: "false"}
       - {label: "PDF", name: "pdf", widget: "file", allow_multiple: true, media_folder: "../assets/pdf", public_folder: "/assets/pdf", required: "false"}
@@ -29,7 +29,7 @@ collections:
     fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish date", name: "date", widget: "datetime"}
-      - {label: "Image", name: "img", widget: "image", media_folder: "../assets/img", public_folder: "/assets/img" required: "false"}
+      - {label: "Image", name: "img", widget: "image", media_folder: "../assets/img", public_folder: "/assets/img", required: "false"}
       - {label: "Vimeo ID", name: "vimeoId", widget: "number", required: "false"}
       - {label: "Image Alt", name: "imgAlt", widget: "string", required: "false"}
       - {label: "PDF", name: "pdf", widget: "file", allow_multiple: true, media_folder: "../assets/pdf", public_folder: "/assets/pdf", required: "false"}
