@@ -95,6 +95,10 @@ input[name="hidden-checkbox"]:checked ~ .main-nav {
   transition-duration: 0.3s;
 }
 
+.menu-label-span {
+  color: var(--clr-text-primary);
+}
+
 input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .violin-svg {
   transform: rotate(30deg);
 }
