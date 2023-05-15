@@ -186,13 +186,14 @@ h2 {
   line-height: 40px;
   padding: 0.5em;
   color: #eee;
-  background: var(--clr-accent);
-  border-radius: 4px;
+  background-color: var(--clr-accent);
+  border-radius: 40px;
+  transition: transform 250ms ease-out;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  filter: brightness(90%);
+  transform: scale(105%);
 }
 
 .lesson-btn {
