@@ -48,24 +48,23 @@ class VimeoEmbed extends HTMLElement {
 
   async connectedCallback() {
     const container = this.shadowRoot.querySelector("div.container");
-    const status = document.createElement('p');
-    container.appendChild(status);
+    const loadingStatusDisp = document.createElement('p');
+    container.appendChild(loadingStatusDisp);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(async (entry) => {
         if (entry.isIntersecting) {
           try {
-            status.textContent = "Loading...";
+            loadingStatusDisp.textContent = "Loading...";
             const endpoint = `https://vimeo.com/api/oembed.json?url=https://vimeo.com/${this.vimeoId}`;
             const response = await fetch(endpoint);
             if (!response.ok) {
               throw new Error('Error: ' + response.status);
             }
             const data = await response.json();
-            container.textContent = null;
             container.innerHTML = data.html;
           }
           catch(err) {
-            status.textContent = `Video failed to load (${err.message})`;
+            loadingStatusDisp.textContent = `Video failed to load (${err.message})`;
             console.log(err.message);
           }
         }
