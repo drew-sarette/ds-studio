@@ -6,7 +6,7 @@
         <p>posted on {{ date | postDate }}</p>
     </header>
     {% if vimeoId %}
-        {{ vimeoId | vimeoEmbed(page.title) | safe }}
+        <vimeo-embed vimeoId="{{ vimeoId }}"></vimeo-embed>
     {% elseif image %}
         <figure class="article-figure">
             <img class="article-main-img" src="{{ image }}" alt="{{ imageAlt }}">

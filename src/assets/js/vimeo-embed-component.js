@@ -1,15 +1,28 @@
 const template = document.createElement("template");
 template.innerHTML = `
 <style>
-    div.vimeo-embed iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+    div.container {
+      background-color: #000;
+      padding: 56.25% 0 0 0;
+      position: relative;
+    }
+    div.container p {
+      font-size: 24px;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    div.container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
     }
 </style>
-<div class="container vimeo-embed" style="padding:56.25% 0 0 0;position:relative;">
+<div class="container">
 </div>
 `;
 
@@ -34,13 +47,27 @@ class VimeoEmbed extends HTMLElement {
   }
 
   async connectedCallback() {
+    const container = this.shadowRoot.querySelector("div.container");
+    const status = document.createElement('p');
+    container.appendChild(status);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(async (entry) => {
         if (entry.isIntersecting) {
-          const endpoint = `https://vimeo.com/api/oembed.json?url=https://vimeo.com/${this.vimeoId}`;
-          const response = await fetch(endpoint);
-          const data = await response.json();
-          this.shadowRoot.querySelector("div").innerHTML = data.html;
+          try {
+            status.textContent = "Loading...";
+            const endpoint = `https://vimeo.com/api/oembed.json?url=https://vimeo.com/${this.vimeoId}`;
+            const response = await fetch(endpoint);
+            if (!response.ok) {
+              throw new Error('Error: ' + response.status);
+            }
+            const data = await response.json();
+            container.textContent = null;
+            container.innerHTML = data.html;
+          }
+          catch(err) {
+            status.textContent = `Video failed to load (${err.message})`;
+            console.log(err.message);
+          }
         }
       });
     });
