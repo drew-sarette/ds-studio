@@ -1,5 +1,4 @@
 const { DateTime } = require("luxon");
-const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets");
