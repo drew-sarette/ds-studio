@@ -4,6 +4,7 @@ template.innerHTML = `
     :host {
       display: block;
       background-color: #000;
+      background-size: cover;
       padding: 56.25% 0 0 0;
       position: relative;
     }
@@ -59,7 +60,6 @@ class VimeoEmbed extends HTMLElement {
               throw new Error('Error: ' + response.status);
             }
             const data = await response.json();
-            this.shadowRoot.innerHTML = data.html;
           }
           catch(err) {
             loadingStatusDisp.textContent = `Video failed to load (${err.message})`;
