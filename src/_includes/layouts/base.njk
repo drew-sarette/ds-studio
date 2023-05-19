@@ -13,15 +13,11 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
         <script src="/assets/js/vimeo-embed-component.js"></script>
         <title>DS violin studio</title>
-        {% set css %}
-        {% include "css/reset.css" %}
-        {% include "css/base-style.css" %}
+        <link rel="stylesheet" href="/assets/css/reset.css">
+        <link rel="stylesheet" href="/assets/css/base-style.css">
         {% if stylesheet %}
-            {% include stylesheet %}
+            <link rel="stylesheet" href="/assets/css/{{ stylesheet }}">
         {% endif %}
-        {% endset %}
-        <style>
-            {{css | cssmin | safe}}</style>
     </head>
     <body>
         <a href="#main-content" id="skip-to-main">Skip to main content</a>
