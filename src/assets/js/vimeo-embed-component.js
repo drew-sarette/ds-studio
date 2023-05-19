@@ -1,12 +1,13 @@
 const template = document.createElement("template");
 template.innerHTML = `
 <style>
-    div.container {
+    :host {
+      display: block;
       background-color: #000;
       padding: 56.25% 0 0 0;
       position: relative;
     }
-    div.container p {
+    :host p {
       font-size: 24px;
       color: #fff;
       position: absolute;
@@ -14,7 +15,7 @@ template.innerHTML = `
       left: 50%;
       transform: translate(-50%, -50%);
     }
-    div.container iframe {
+    :host iframe {
       position: absolute;
       top: 0;
       left: 0;
@@ -22,8 +23,6 @@ template.innerHTML = `
       height: 100%;
     }
 </style>
-<div class="container">
-</div>
 `;
 
 class VimeoEmbed extends HTMLElement {
@@ -47,9 +46,8 @@ class VimeoEmbed extends HTMLElement {
   }
 
   async connectedCallback() {
-    const container = this.shadowRoot.querySelector("div.container");
     const loadingStatusDisp = document.createElement('p');
-    container.appendChild(loadingStatusDisp);
+    this.shadowRoot.appendChild(loadingStatusDisp);
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(async (entry) => {
         if (entry.isIntersecting) {
@@ -61,7 +59,7 @@ class VimeoEmbed extends HTMLElement {
               throw new Error('Error: ' + response.status);
             }
             const data = await response.json();
-            container.innerHTML = data.html;
+            this.shadowRoot.innerHTML = data.html;
           }
           catch(err) {
             loadingStatusDisp.textContent = `Video failed to load (${err.message})`;
@@ -71,6 +69,7 @@ class VimeoEmbed extends HTMLElement {
       });
     });
     observer.observe(this);
+
   }
 }
 customElements.define("vimeo-embed", VimeoEmbed);
