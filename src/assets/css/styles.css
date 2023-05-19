@@ -1,6 +1,6 @@
-@font-face{ 
-	font-family: 'IM Fell Double Pica';
-	src: url('../fonts/IM-Fell-Double-Pica.woff') format('woff');
+@font-face {
+  font-family: "IM Fell Double Pica";
+  src: url("../fonts/IM-Fell-Double-Pica.woff") format("woff");
 }
 
 :root {
@@ -11,6 +11,75 @@
 
   --clr-text-primary: #151515;
   --clr-accent: #751415;
+}
+
+/* //////////////////////
+    RESET - source: https://piccalil.li/blog/a-modern-css-reset
+    /////////////////////// */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul:where([role="list"]),
+ol:where([role="list"]) {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 /* || MOBILE STYLES */
@@ -204,7 +273,7 @@ h2 {
 .lesson-btn {
   display: block;
   max-width: fit-content;
-  margin: .5em auto;
+  margin: 0.5em auto;
 }
 
 .secondary-nav-list {
@@ -234,6 +303,51 @@ h2 {
 footer {
   font-size: calc(var(--fs-body) - 3);
   text-align: center;
+}
+
+/* || index */
+/* Services */
+.services-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Testimonials */
+.testimonial {
+  margin-bottom: 1em;
+}
+
+.testimonial cite {
+  text-align: center;
+}
+
+/* || Contact */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+}
+
+.contact-form-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-primary.contact-form-child {
+  border: none;
+  align-self: flex-start;
+}
+
+/* || Individual posts */
+.article-header {
+  display: unset;
+}
+
+a[download] {
+  display: inline-block;
+  padding: 0.5em 0;
 }
 
 @media screen and (min-width: 75ch) {
@@ -271,6 +385,11 @@ footer {
     flex-direction: row;
     list-style: none;
     justify-content: space-evenly;
+  }
+
+  .services-flex {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 
