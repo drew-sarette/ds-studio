@@ -8,10 +8,6 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addShortcode("currentYear", () => new Date().getFullYear());
 
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({}).minify(code).styles;
-  });
-
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   });
