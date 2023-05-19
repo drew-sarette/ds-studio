@@ -1,3 +1,8 @@
+@font-face{ 
+	font-family: 'IM Fell Double Pica';
+	src: url('./assets/fonts/IM-Fell-Double-Pica.woff') format('woff');
+}
+
 :root {
   --fs-body: 18px;
 
