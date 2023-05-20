@@ -1,17 +1,17 @@
 <li class="snippet">
-    <a href="{{ post.url }}">
-        <div class="img-wrapper">
-            <img class="img-cover" src="{{ post.data.img }}" alt="{{ post.data.imgAlt }}">
+    <a class="snippet__a" href="{{ post.url }}">
+        <div class="snippet__img-wrapper">
+            <img class="snippet__img" src="{{ post.data.img }}" alt="{{ post.data.imgAlt }}">
         </div>
         <div>
-            <h3 class="snippet-title">
+            <h3 class="snippet__h3">
                 {{ post.data.title }}
             </h3>
-            <p class="snippet-meta">
+            <p class="snippet__meta">
                 posted on
                 <span>{{ post.data.date | postDate }}</span>
             </p>
-            <p class="snippet-body">{{ post.data.description }}</p>
+            <p class="snippet__body">{{ post.data.description }}</p>
         </div>
     </a>
 </li>

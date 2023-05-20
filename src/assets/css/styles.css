@@ -121,7 +121,7 @@ body {
   font-size: 1.3em;
 }
 
-.header-flex-wrapper {
+.page-header__flex-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -147,7 +147,7 @@ input[name="hidden-checkbox"]:checked ~ .main-nav {
   background: none;
 }
 
-.main-menu-btn label {
+.main-menu-btn__label {
   display: flex;
   flex-direction: column;
   height: 100px;
@@ -182,24 +182,24 @@ input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
   transform: rotate(-45deg) translate(38px, -10px);
 }
 
-.main-nav-list {
+.main-nav__list {
   text-align: center;
 }
 
-.main-nav-list a {
+.main-nav__a {
   text-decoration: none;
   color: var(--clr-text-primary);
 }
 
-.main-nav-li[aria-current] {
+.main-nav__a[aria-current] {
   font-weight: bolder;
 }
 
-.main-nav-li[aria-current]::before {
+.main-nav__a[aria-current]::before {
   content: "||:  ";
 }
 
-.main-nav-li[aria-current]::after {
+.main-nav__a[aria-current]::after {
   content: "  :||";
 }
 
@@ -229,7 +229,7 @@ h2 {
   text-transform: capitalize;
 }
 
-.snippet a {
+.snippet__a {
   display: flex;
   align-items: flex-start;
   margin-bottom: 0.3em;
@@ -238,7 +238,7 @@ h2 {
   color: var(--clr-text-primary);
 }
 
-.snippet .img-wrapper {
+.snippet__img-wrapper {
   width: 4em;
   height: 4em;
   /* border-radius: 50%; */
@@ -246,7 +246,7 @@ h2 {
   flex-shrink: 0;
 }
 
-.img-wrapper img {
+.snippet__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -305,7 +305,6 @@ footer {
   text-align: center;
 }
 
-/* || index */
 /* Services */
 .services-flex {
   display: flex;
@@ -314,11 +313,11 @@ footer {
 }
 
 /* Testimonials */
-.testimonial {
+.testimonials__blockquote {
   margin-bottom: 1em;
 }
 
-.testimonial cite {
+.testimonial__cite {
   text-align: center;
 }
 
@@ -363,11 +362,11 @@ a[download] {
     align-self: center;
   }
 
-  .header-flex-wrapper {
+  .page-header__flex-wrapper {
     justify-content: flex-start;
   }
 
-  .main-menu-btn span {
+  .main-menu-btn__span {
     display: none;
   }
 
@@ -384,7 +383,7 @@ a[download] {
     height: unset !important;
   }
 
-  .main-nav-list {
+  .main-nav__list {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -412,7 +411,7 @@ a[download] {
     flex-grow: 1;
   }
 
-  .main-nav-list {
+  .main-nav__list {
     display: flex;
     justify-content: space-between;
   }

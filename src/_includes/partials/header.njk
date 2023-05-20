@@ -1,14 +1,14 @@
 <header class="page-header">
   <input type="checkbox" name="hidden-checkbox" id="hidden-checkbox">
-    <div class="header-flex-wrapper">
+    <div class="page-header__flex-wrapper">
       <a href="/" title="Home" tabindex="-1">
         {% include "svg/logo.njk"%}
       </a>
       <button class="main-menu-btn" aria-label="main menu">
-        <label for="hidden-checkbox" >
+        <label class="main-menu-btn__label" for="hidden-checkbox" >
           {% include "svg/violin.njk" %}
           {% include "svg/bow.njk" %}
-          <span class="menu-label-span">menu</span>
+          <span class="main-menu-btn__span">menu</span>
         </label>
       </button>
     </div>
