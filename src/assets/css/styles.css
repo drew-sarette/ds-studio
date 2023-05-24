@@ -174,11 +174,11 @@ input[name="hidden-checkbox"]:checked ~ .main-nav {
   color: var(--clr-text-primary);
 }
 
-input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .violin-svg {
+input[name="hidden-checkbox"]:checked ~ .page-header__flex-wrapper .violin-svg {
   transform: rotate(30deg);
 }
 
-input[name="hidden-checkbox"]:checked ~ .header-flex-wrapper .bow-svg {
+input[name="hidden-checkbox"]:checked ~ .page-header__flex-wrapper .bow-svg {
   transform: rotate(-45deg) translate(38px, -10px);
 }
 
