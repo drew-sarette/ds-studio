@@ -2,12 +2,16 @@
   font-family: "IM Fell Double Pica";
   src: url("../fonts/IM-Fell-Double-Pica.woff") format("woff");
 }
+@font-face {
+  font-family: "ParisineClair Regular";
+  src: url("../fonts/ParisineClair\ Regular.otf") format("otf");
+}
 
 :root {
   --fs-body: 18px;
 
   --ff-heading: "IM Fell Double Pica", sans-serif;
-  --ff-body: "IM Fell Double Pica", sans-serif;
+  --ff-body: "ParisineClair Regular", sans-serif;
 
   --clr-text-primary: #151515;
   --clr-accent: #751415;
@@ -91,6 +95,10 @@ body {
   padding: 1.5em 1.5em 0 1.5em;
   display: flex;
   flex-direction: column;
+}
+
+h1, h2, h3, .btn-primary {
+  font-family: var(--ff-heading);
 }
 
 #skip-to-main {
@@ -209,19 +217,20 @@ main {
 }
 
 h1 {
-  font-size: 2.2em;
+  font-size: 2.2rem;
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 1.7rem;
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   line-height: 1em;
   font-weight: bold;
   margin-top: 0.5em;
@@ -231,7 +240,7 @@ h2 {
 
 .snippet__a {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 0.3em;
   gap: 1em;
   text-decoration: none;

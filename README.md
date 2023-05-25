@@ -1,6 +1,6 @@
 # Violin Teacher's Studio Website
 
-This project is a website for a violin teacher's studio. It was developed using Eleventy and deployed on Netlify.
+This project is a website for a violin teacher's studio. It was developed using Eleventy and deployed on Netlify. The main goals were to create a simple page that would use existing services such as calendly, paypal, Netlify, etc... to provide a low cost, low maintenance, and flexible website for a music teacher. 
 
 ## Features
 1. JavaScript-free mobile navigation
@@ -8,9 +8,9 @@ This project is a website for a violin teacher's studio. It was developed using 
 2. Designed with accessibility in mind
     - uses semantic html, aria attributes, a user-friendly skip link that remains visible for 1 second regardless of how fast a user tabs.
     - Passes WAVE audit
-3. Performant CSS
-    - css is split into base styles and individual pages, then combined using templates, and minified using CleanCSS using an Eleventy filter.
-4. Four hundos 
+3. SVGs used for the logo, buttons, etc... were customized and simplified using Inkscape.
+4. Connected to DecapCMS for easy management and hosted on Netlify
+5. Self-hosted fonts.
 
 ## Technologies Used
 - JavaScript
@@ -33,7 +33,3 @@ Describe what you learned while developing this project. This could include new 
 ## Future Plans
 
 If you have any plans to further develop or improve this project in the future, you can describe them here.
-
-## About the Developer
-
-Include a brief bio about yourself here. You can mention your background as a violin teacher and web developer, and any other relevant information.
