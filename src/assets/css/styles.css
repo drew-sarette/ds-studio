@@ -251,16 +251,16 @@ h3 {
 
 .snippet__a {
   display: flex;
+  gap: 1em;
   align-items: flex-start;
   text-decoration: none;
   color: var(--clr-text-primary);
 }
 
 .snippet__img-wrapper {
-  width: 4em;
-  height: 4em;
-  /* border-radius: 50%; */
-  overflow: hidden;
+  margin-top: .5em;
+  width: 5em;
+  height: 5em;
   flex-shrink: 0;
 }
 
@@ -268,6 +268,12 @@ h3 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.snippet__meta {
+  font-size: var(--s-1);
+  font-style: italic;
+  line-height: normal;
 }
 
 .btn-primary {
@@ -291,7 +297,7 @@ h3 {
 .lesson-btn {
   max-width: fit-content;
   display: block;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .paginated-nav__list,
@@ -309,6 +315,7 @@ h3 {
 }
 
 .paginated-nav__list {
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 

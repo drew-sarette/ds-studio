@@ -5,21 +5,11 @@
         <a class="paginated-nav__a" href="{{ pagination.href.first }}">First</a>
       </li>
     {% endif %}
-    {% if pagination.href.previous %}
-      <li class="paginated-nav__li">
-        <a class="paginated-nav__a" href="{{ pagination.href.previous }}">Previous</a>
-      </li>
-    {% endif %}
     {%- for pageEntry in pagination.pages %}
       <li class="paginated-nav__li">
         <a class="paginated-nav__a" href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="page" {% endif %}>{{ loop.index }}</a>
       </li>
     {%- endfor %}
-    {% if pagination.href.next %}
-      <li class="paginated-nav__li">
-        <a class="paginated-nav__a" href="{{ pagination.href.next }}">Next</a>
-      </li>
-    {% endif %}
     {% if page.url != pagination.href.last %}
       <li class="paginated-nav__li">
         <a class="paginated-nav__a" href="{{ pagination.href.last }}">Last</a>

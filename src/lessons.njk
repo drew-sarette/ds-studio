@@ -15,7 +15,7 @@ layout: 'layouts/base.njk'
 <section>
     <h2>Before your first lesson...</h2>
     <p>These articles contain everything you need to know before your first lesson.</p>
-    <ul role="list">
+    <ul role="list" class="stack">
         {% for post in collections.lessons %}
             {% include "partials/snippet.njk" %}
         {% endfor %}
