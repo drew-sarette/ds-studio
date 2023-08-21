@@ -9,15 +9,16 @@ description: Everything you need to know about scheduling, cancellations, paymen
 - Payment for the month is due by the first lesson of that month. An invoice will be sent before that.
 - Cancellations may be made by phone or email at least one day in advance, or the day of in case of illness. I will make my best attempt to reschedule your lesson if you give me time!
 - A lesson credit will be applied to the next month if there is an illness/emergency and we cannot reschedule the same week.
+- Except in case of illness or emergency, I cannot refund or reschedule for same-day cancellations and no-shows. 
 - Lateness may result in a loss of lesson time. If I am late, I will either make up the time I missed or give you a credit for the next month.
 
 ## Parent and Student Guidelines
-- Parent attendance is required for all young students’ or beginners’ lessons (generally under the age of 10). I will not teach if the student is not accompanied by a parent.
+- Parent attendance is required for all young students’ or beginners’ lessons (generally under the age of 13). I will not teach if the student is not accompanied by a parent.
 - Beginners commit to one year of lessons. As a new student, a commitment to yourself that you will work toward a long-term goal gives you both a source of motivation and a sense of achievement.
 - All assigned music and books must be brought to every lesson. This includes a practice chart from your last lesson and all assigned technique handouts. It is recommended to put all handouts in a small 3-ring binder to keep it organized.
 
 ## Instrument Guidelines
-- Instrument rental: Rental is probably the easiest solution for a growing student who will need several different violins of different sizes before getting a permanent instrument.
+- Instrument rental: Rental is probably the easiest solution for a growing student who will need several different violins of different sizes before getting a permanent instrument. Contact me for a referral to a reputable shop.
 - Instrument purchase: Please do not buy an instrument for your student without bringing it to me to check the fit and quality of the instrument. Please do not buy violins on Amazon or Ebay, because it is essential to try out an instrument before buying it. Beware the dreaded VSO (Violin Shaped Object): these brightly painted toys, usually sold online, are impossible to tune and lack the construction required for good tone production.
 
 ## Free Trial Lessons and Referrals
