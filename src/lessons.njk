@@ -5,19 +5,23 @@ layout: 'layouts/base.njk'
 
 <section>
     <h1>Lessons</h1>
-        <p>Get started today! Book a free 30-minute intro lesson here:</p>
-<!-- Calendly link widget begin -->
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a class="btn-primary lesson-btn" href="https://calendly.com/drewsarette/30-minute-lesson" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/drewsarette/30-minute-lesson' });return false;">Schedule now!</a>
-<!-- Calendly link widget end -->
-</section>
-<section>
-    <h2>Before your first lesson...</h2>
-    <p>These articles contain everything you need to know before your first lesson.</p>
-    <ul role="list" class="stack">
-        {% for post in collections.lessons %}
-            {% include "partials/snippet.njk" %}
-        {% endfor %}
-    </ul>
-</section>
+    <p>Get started today! Book a free 30-minute intro lesson here:</p>
+    <!-- Google Calendar Appointment Scheduling begin -->
+    <iframe
+        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3zfsYvyMALgAzqttoNKXSnh9LSN484f4xKZC0RqE3oaY5Hqs5E9AM4NK-16cGheoQ6_rMOkgF2?gv=true"
+        style="border: 0; background-color: #ffffff; border-radius: 1em; margin: 1em 0;"
+        ;=";"
+        width="100%"
+        height="600"
+        frameborder="0"></iframe>
+    <!-- end Google Calendar Appointment Scheduling -->
+    </section>
+    <section>
+        <h2>Before your first lesson...</h2>
+        <p>These articles contain everything you need to know before your first lesson.</p>
+        <ul role="list" class="stack">
+            {% for post in collections.lessons %}
+                {% include "partials/snippet.njk" %}
+            {% endfor %}
+        </ul>
+    </section>
