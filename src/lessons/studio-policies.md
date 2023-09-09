@@ -7,10 +7,14 @@ description: Everything you need to know about scheduling, cancellations, paymen
 ---
 
 ## Payment and Cancellation Policy
+- My base rate is currently $60 per hour. Lessons are generally 30, 45, or 60 minutes. 15 minute lessons are available for very young students.
 - Payment for the month is due by the first lesson of that month. An invoice will be sent before that.
 - I am unable to refund any lesson fees after payment. I will make my best attempt to reschedule a lesson if you notify me in advance (at least 1 day) if something comes up.
 - In case of illness or emergency the day of your lesson, I will be happy to reschedule your lesson time for later, or credit you for the next month if that is not possible.
 - Lateness may result in a loss of lesson time. If I am late, I will either make up the time I missed or give a credit for the next month.
+
+## Scholarship 
+- A limited number of scholarships are available for students with financial need. Please use the contact for details!
 
 ## Free Trial Lessons and Referrals
 - 30-minute trial lessons are free! I want you to be sure that we are a good fit before you sign up.
