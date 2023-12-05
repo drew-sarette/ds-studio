@@ -1,5 +1,5 @@
 ---
-img: /assets/img/marius-masalar-rpomlgwai2w-unsplash.jpg
+img: /assets/img/stefany-andrade-gbscaasu2fo-unsplash.jpg
 imgAlt: Musical scale
 author: Drew Sarette
 title: One Octave Scales and Arpeggios
