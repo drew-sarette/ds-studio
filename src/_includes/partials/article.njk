@@ -1,22 +1,18 @@
 <article data-pagefind-body class="main-article stack">
-    <header class="article-header">
-        <h1 class="article-title">
-            {{ title }}
-        </h1>
-        <p>posted on {{ date | postDate }}</p>
-    </header>
-    {% if vimeoId %}
-        {{ vimeoId | vimeoEmbed(title)  | safe }}
-    {% elseif img %}
-        <figure class="article-figure">
-            <img class="article-img" src="{{ img }}" alt="{{ imgAlt }}">
-                <figcaption>
-                    {{ imgAlt }}
-                </figcaption>
-            </figure>
-        {% endif %}
-        {% if pdf %}
-            <a href="{{ pdf }}" class="download-link" download>Download PDF</a>
-        {% endif %}
-        {{ content | safe }}
-    </article>
+  <header class="article-header">
+    <h1 class="article-title">
+      {{ title }}
+    </h1>
+    <p>posted on {{ date | postDate }}</p>
+  </header>
+  {% if vimeoId %}
+  {{ vimeoId | vimeoEmbed(title)  | safe }}
+  {% elseif img %}
+  <figure class="article-figure">
+    <img class="article-img" src="{{ img }}" alt="{{ imgAlt }}" />
+  </figure>
+  {% endif %} {% if pdf %}
+  <a href="{{ pdf }}" class="download-link" download>Download PDF</a>
+  {% endif %}
+  {{ content | safe }}
+</article>
