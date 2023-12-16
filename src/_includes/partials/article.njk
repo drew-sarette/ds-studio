@@ -9,7 +9,11 @@
   {{ vimeoId | vimeoEmbed(title)  | safe }}
   {% elseif img %}
   <figure class="article-figure">
-    <img class="article-img" src="{{ img }}" alt="{{ imgAlt }}" />
+    <img
+      class="article-img"
+      src="{{ img }}"
+      alt="{{ imgAlt }}"
+    />
   </figure>
   {% endif %} {% if pdf %}
   <a href="{{ pdf }}" class="download-link" download>Download PDF</a>

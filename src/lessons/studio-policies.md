@@ -1,7 +1,7 @@
 ---
 title: Studio Policies
 date: 2023-04-06
-img: /assets/img/stefany-andrade-gbscaasu2fo-unsplash.jpg
+img: /assets/img/scaled-scale.jpg
 imgAlt: Drew Sarette
 description: Everything you need to know about scheduling, cancellations,
   payment, instruments, etc...
