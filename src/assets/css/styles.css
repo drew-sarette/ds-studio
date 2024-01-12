@@ -2,6 +2,7 @@
   font-family: "IM Fell Double Pica";
   src: url("../fonts/IM-Fell-Double-Pica.woff") format("woff");
 }
+
 @font-face {
   font-family: "ParisineClair Regular";
   src: url("../fonts/ParisineClair\ Regular.otf") format("otf");
@@ -21,8 +22,8 @@
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
 
-  --ff-heading: "IM Fell Double Pica", sans-serif;
-  --ff-body: "ParisineClair Regular", sans-serif;
+  --ff-heading: "IM Fell Double Pica", serif;
+  --ff-body: "ParisineClair Regular", system-ui, sans-serif;
 
   --clr-text-primary: #151515;
   --clr-accent: #751415;
