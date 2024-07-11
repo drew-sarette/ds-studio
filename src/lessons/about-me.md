@@ -1,7 +1,7 @@
 ---
 title: About Me
 date: 2023-04-06
-img: /assets/img/headshot.jpg
+img: /assets/img/headshot-upscaled.jpg
 imgAlt: Drew Sarette
 description: My education, experience, and recent engagements.
 ---

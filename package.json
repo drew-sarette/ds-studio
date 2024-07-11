@@ -6,7 +6,7 @@
   "scripts": {
     "start": "eleventy --serve",
     "build": "eleventy",
-    "pagefind": "npx pagefind --source 'public'"
+    "pagefind": "npx pagefind --site 'public'"
   },
   "keywords": [],
   "author": "Drew Sarette",

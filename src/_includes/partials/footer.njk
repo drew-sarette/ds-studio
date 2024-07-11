@@ -1,3 +1,10 @@
 <footer class="site-footer">
+  {% include 'partials/search.njk' %}
+  <nav class="site-footer__nav">
+    <ul role="list">
+      <li><a href="/accessibility">Accessibility Statement</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+    </ul>
+  </nav>
   <p>© {% currentYear %} Drew Sarette. All rights reserved.</p>
 </footer>

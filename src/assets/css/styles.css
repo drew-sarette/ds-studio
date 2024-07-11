@@ -389,9 +389,10 @@ a[download] {
   }
 
   .page-header,
-  main {
+  main,
+  .site-footer {
     width: 100%;
-    max-width: 75ch;
+    max-width: 816px;
     /* need width set to get nav flexbox to behave */
     align-self: center;
   }
@@ -432,8 +433,9 @@ a[download] {
 
 @media screen and (min-width: 140ch) {
   .page-header,
-  main {
-    max-width: 90ch;
+  main,
+  .site-footer {
+    max-width: 980px;
   }
 
   .page-header {

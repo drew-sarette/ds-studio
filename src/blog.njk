@@ -9,8 +9,7 @@ pagination:
 
 <h1>{{ title }}</h1>
 <p>This is where I post tutorials on pieces I teach, arrangements I have made, personal projects, and performances.</p>
-{% include 'partials/search.njk' %}
-<ul role="list" class="stack">
+<ul role="list" class="stack" data-pagefind-ignore >
     {% for post in pagination.items %}
         {% include "partials/snippet.njk" %}
     {% endfor %}
