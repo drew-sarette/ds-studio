@@ -20,7 +20,7 @@ description: Everything you need to know about scheduling, cancellations,
 
 ## Planned Absences
 
-* I expect to meet every student every week during the school calendar.
+* I expect to meet every student every week that school is in session.
 * I expect to meet most weeks during the summer break. If you are planning a trip during the summer, I will remove those lessons from your bill if you let me know the month before. 
 
 ## Trial Lessons
