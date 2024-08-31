@@ -6,17 +6,29 @@ imgAlt: Drew Sarette
 description: Everything you need to know about scheduling, cancellations,
   payment, instruments, etc...
 ---
-## Payment, Scheduling, and Cancellations
+## Payment
 
-* My rate is $60 per hour. Lessons are generally 30, 45, or 60 minutes. 15 minute lessons are available for very young students.
-* Payment for the month is due by the first lesson of that month. 
-* Before the beginning of each month, we can discuss any scheduling issues. When we are in agreement, I will send an email with the schedule and bill.   
-* I cannot give refunds after payment is received.  
-* I will **attempt** to reschedule in case of illness or an emergency.
+* My rate is $65 per hour for weekly lessons. Lessons are generally 30, 45, or 60 minutes. 15 minute lessons are available for very young students.
+* Payment for the month is due by the first lesson of that month.  Before that, you will receive an email listing the scheduled lessons, and the total for the month.  
+* I cannot give refunds after payment is received.
 
-## Free Trial Lessons and Referrals
+## Absence and Make-up Lessons
 
-* 30-minute trial lessons are free! I want you to be sure that we are a good fit before you sign up.
+* If you need to reschedule, please notify me at least one week in advance. I will ***attempt*** to reschedule your lesson.
+* Rescheduled lessons may need to be held by video call, depending on my location/schedule.
+* In case of illness/emergency, I am happy to reschedule your lesson.
+
+## Planned Absences
+
+* I expect to meet every student every week during the school calendar.
+* I expect to meet most weeks during the summer break. If you are planning a trip during the summer, I will remove those lessons from your bill if you let me know the month before. 
+
+## Trial Lessons
+
+* A 30 minute trial lesson is $30.
+
+## Referrals
+
 * A lesson credit will be awarded for a referral to a new student, if I am accepting new students.
 
 ## Parent Guidelines
@@ -31,16 +43,12 @@ description: Everything you need to know about scheduling, cancellations,
 * Instrument rental: Rental is probably the easiest solution for a growing student who will need several different violins of different sizes before getting a permanent instrument. Contact me for a referral to a reputable shop.
 * Instrument purchase: Please do not buy an instrument for your student without bringing it to me to check the fit and quality of the instrument. Please do not buy violins on Amazon or Ebay, because it is necessary to try out an instrument before buying it. Beware the dreaded VSO (Violin Shaped Object): these brightly painted toys, usually sold online, are impossible to tune and lack the construction required for good tone production.
 
-## Recitals
-
-* Recitals are important to the development and motivation of students, so all are expected to attend and perform in all studio recitals (about 2 each year) if possible.
-
 ## Practice Requirements
-* All students should practice every day.
+
+* All students must practice every day.  
 * Beginners should start with 10 min of daily practice, and add time as needed.
 * A general rule of thumb: You should be practicing every day at least as long as your lesson is.
 
 ## Ending Lessons
 
-* If you decide to discontinue lessons, please let me know as soon as you are able. A month's notice is greatly appreciated.
-* I may decide to discontinue lessons if a problem persists after I have brought it to your attention, such as lateness, absences, or missed payment.
+* Please notify me in writing (text or email) before the 15th of the month before you decide to discontinue lessons. If you notify me after the 15th, you agree to pay for a total of four lessons in the following month, which you may attend as usual.
