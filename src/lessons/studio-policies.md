@@ -2,7 +2,7 @@
 title: Studio Policies
 date: 2023-04-06
 img: /assets/img/scaled-scale.jpg
-imgAlt: Drew Sarette
+imgAlt: Violin with sheet music.
 description: Everything you need to know about scheduling, cancellations,
   payment, instruments, etc...
 ---
@@ -12,11 +12,12 @@ description: Everything you need to know about scheduling, cancellations,
 * Payment for the month is due by the first lesson of that month.  Before that, you will receive an email listing the scheduled lessons, and the total for the month.  
 * I cannot give refunds after payment is received.
 
-## Absence and Make-up Lessons
+## Rescheduling
 
 * If you need to reschedule, please notify me at least one week in advance. I will ***attempt*** to reschedule your lesson.
 * Rescheduled lessons may need to be held by video call, depending on my location/schedule.
 * In case of illness/emergency, I am happy to reschedule your lesson.
+* If I cancel due to illness or emergency, I will make up the lesson at the earliest opportunity or credit you for the next month. 
 
 ## Planned Absences
 
