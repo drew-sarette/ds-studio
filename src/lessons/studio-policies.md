@@ -8,21 +8,22 @@ description: Everything you need to know about scheduling, cancellations,
 ---
 ## Payment
 
-* My rate is $65 per hour for weekly lessons. Lessons are generally 30, 45, or 60 minutes. 15 minute lessons are available for very young students.
-* Payment for the month is due by the first lesson of that month.  Before that, you will receive an email listing the scheduled lessons, and the total for the month.  
+* The flat monthly rate is the same for months with five or four lessons.
+* Some months, I may plan to be absent for performances or travel. In those cases, I will deduct those lessons from your monthly bill.
+* Payment for the month is due by the first lesson of that month.
 * I cannot give refunds after payment is received.
 
 ## Rescheduling
 
-* If you need to reschedule, please notify me at least one week in advance. I will ***attempt*** to reschedule your lesson.
-* Rescheduled lessons may need to be held by video call, depending on my location/schedule.
-* In case of illness/emergency, I am happy to reschedule your lesson.
-* If I cancel due to illness or emergency, I will make up the lesson at the earliest opportunity or credit you for the next month. 
+* Remember, paying the monthly lesson fee reserves you a specific slot in my weekly teaching schedule;  rescheduling is purely at my discretion.
+* In case of illness/emergency, I will offer you either a virtual lesson if you are able to play, or a video exchange if you need time to recover.
+* If I cancel due to illness or emergency, I will make up the lesson at our earliest opportunity or credit you for the next month. 
 
 ## Planned Absences
 
 * I expect to meet every student every week that school is in session.
-* I expect to meet most weeks during the summer break. If you are planning a trip during the summer, I will remove those lessons from your bill if you let me know the month before. 
+* During the summer months, I may deduct lessons for planned travel at my discretion.
+* Should a student attend a summer music festival or camp, I will deduct those weeks from the bill, provided I am notified the month before.
 
 ## Trial Lessons
 
@@ -52,4 +53,5 @@ description: Everything you need to know about scheduling, cancellations,
 
 ## Ending Lessons
 
-* Please notify me in writing (text or email) before the 15th of the month before you decide to discontinue lessons. If you notify me after the 15th, you agree to pay for a total of four lessons in the following month, which you may attend as usual.
+* You agree to notify me by text or email on or before the 15th if you intend to discontinue lessons the next month. 
+* If you notify me after the 15th, you agree to pay the full amount for the next month. You would, of course, be welcome and encouraged to attend that last month of lessons either in person or virtually.
