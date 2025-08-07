@@ -35,15 +35,15 @@ description: Everything you need to know about scheduling, cancellations,
 
 ## Parent Guidelines
 
-* Parent attendance is required for all young students’ or beginners’ lessons. We will make a plan at the beginning of lessons.
+* Parent attendance is required for all young students’ or beginners’ lessons.
 * The parent who attends lessons must be able to participate in daily practice.
 * The lesson parent must take notes. This ensures that you and the student know how to practice at home.
-* As a student develops executive function, parent attendance is not needed in each lesson.
+* Any minor students must be accompanied by an adult.  The accompanying adult may sit in during the lesson, or wait in the waiting area. 
 
 ## Instrument Guidelines
 
-* Instrument rental: Rental is probably the easiest solution for a growing student who will need several different violins of different sizes before getting a permanent instrument. Contact me for a referral to a reputable shop.
-* Instrument purchase: Please do not buy an instrument for your student without bringing it to me to check the fit and quality of the instrument. Please do not buy violins on Amazon or Ebay, because it is necessary to try out an instrument before buying it. Beware the dreaded VSO (Violin Shaped Object): these brightly painted toys, usually sold online, are impossible to tune and lack the construction required for good tone production.
+* Instrument rental: Rental is the easiest solution for a growing student who will need several instruments of different sizes before getting a permanent instrument. Contact me for a referral to a reputable shop.
+* Instrument purchase: Please do not buy an instrument for your student without bringing it to me to check the fit and quality of the instrument. Please do not buy from online sellers without checking with me! I am always happy to assist in the instrument search.  
 
 ## Practice Requirements
 
