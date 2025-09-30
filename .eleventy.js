@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets");
   eleventyConfig.addPassthroughCopy("./src/admin");
   eleventyConfig.addPassthroughCopy({ "./src/favicon": "/" });
+  eleventyConfig.addPassthroughCopy("src/robots.txt");
 
   eleventyConfig.addShortcode("currentYear", () => new Date().getFullYear());
 
