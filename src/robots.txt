@@ -1,16 +1,3 @@
-User-agent: *
-Disallow:
-
-# Allow search engines and AI input agents
-User-agent: Googlebot
-Allow: /
-
-User-agent: Bingbot
-Allow: /
-
-User-agent: ChatGPT-User
-Allow: /
-
 # Block known AI training bots
 User-agent: GPTBot
 Disallow: /
