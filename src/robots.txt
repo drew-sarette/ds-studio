@@ -1,8 +1,3 @@
-# Cloudflare content-signals
-search: yes
-ai-input: yes
-ai-train: no
-
 User-agent: *
 Disallow:
 
