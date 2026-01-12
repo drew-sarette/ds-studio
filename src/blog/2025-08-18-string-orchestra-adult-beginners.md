@@ -22,6 +22,7 @@ description: Individual Parts for Ants and Low-High-Low
 ## Cello Setup
 
 * [https://youtu.be/Aoy4xT03DmQ?si=9Tm_wWiVRdFTmBN9](<* https://youtu.be/Aoy4xT03DmQ?si=9Tm_wWiVRdFTmBN9>)
+* <https://youtu.be/WR08x6KaYeU>
 * Points of contact: sternum, legs
 * Angles: 45deg, slightly angled in.
 * Test: Left Hand glides on A string
@@ -40,3 +41,14 @@ description: Individual Parts for Ants and Low-High-Low
 * Pull string to the right with the pad of the index (first) finger, and release.
 * Listen to the ringing of the instrument.  The thicker and longer the string, the longer it reverberates.
 * Pluck over the end of the fingerboard.
+
+## Class Meetings
+
+Jan 12, 19?, 26
+Feb 2, 9, 23
+Mar 2, 9, 23, 30
+Apr 6, 13, 27
+May 4
+
+Concert 5/5 7:30 PM
+405 Randolph Ave.
